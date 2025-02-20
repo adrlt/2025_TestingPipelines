@@ -2,7 +2,7 @@
 
 ##  Declaring Slurm Configuration Options
 #SBATCH --job-name=MQCA
-#SBATCH --time=0-00:05:00
+#SBATCH --time=2-00:00:00
 #SBATCH --partition=cpu
 #SBATCH --cpus-per-task=1	# Default memory allocated is 8GB/CPU
 
@@ -20,15 +20,16 @@ source /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/00_TestEnv/bin/activ
 #  MultiQC v1.27.1
 
 ##  Running Code
-#  Manually creating the PROJECT_ID variable
-#PROJECT_ID='PRJNA239961'
+#  Manually creating the PROJECT_ID, ORG variables
+#PROJECT_ID='PRJDB4386'
+#ORG=Protobothrops-mucrosquamatus
 
 #  Create a MultiQC directory for the project
-mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/94_Results/00_${PROJECT_ID}_MultiQC
+mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/94_Results/00_${ORG}_${PROJECT_ID}_MultiQC
 
 #  Use the FastQC Analysis output files to MultiQC them into one report
-multiqc /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/01_FastQC_Results/00_${PROJECT_ID}_FastQC/ \
---filename 00_${PROJECT_ID}_MQCA \
+multiqc /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/01_FastQC_Results/00_${ORG}_${PROJECT_ID}_FastQC/ \
+--filename 00_${ORG}_${PROJECT_ID}_MQCA \
 --outdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/94_Results/9403_MQCA_Results
 
-echo "03_MultiQC_Analysis script for ${PROJECT_ID} completed."
+echo "03_MultiQC_Analysis script for ${PROJECT_ID} associated to ${ORG} completed."

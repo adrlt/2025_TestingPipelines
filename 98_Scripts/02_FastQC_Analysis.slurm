@@ -2,8 +2,8 @@
 
 ##  Declaring Slurm Configuration Options
 #SBATCH --job-name=FQCA
-#SBATCH --time=00:30:00			# 30 minutes for around 100G
-#SBATCH --partition=interactive
+#SBATCH --time=2-00:00:00			# 30 minutes for around 100G
+#SBATCH --partition=cpu
 #SBATCH --cpus-per-task=1
 
 #SBATCH --output=/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/97_Logs/00_%x-%j.out
@@ -16,15 +16,16 @@
 module load fastqc/0.12.1
 
 ##  Running Code
-#  Manually creating the PROJECT_ID variable
-#PROJECT_ID='PRJNA239961'
+#  Manually creating the PROJECT_ID, ORG variables
+#PROJECT_ID='PRJDB4386'
+#ORG=Protobothrops-mucrosquamatus
 
 #  Create a FastQ directory for the project
-mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/01_FastQC_Results/00_${PROJECT_ID}_FastQC
+mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/01_FastQC_Results/00_${ORG}_${PROJECT_ID}_FastQC
 
 #  Extract FastQ files into FastQC and use the previously created directory as output
-fastqc /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_${PROJECT_ID}_FastQ_Files/*.fastq \
+fastqc /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_${ORG}_${PROJECT_ID}_FastQ_Files/*.fastq \
 --extract \
--o /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/01_FastQC_Results/00_${PROJECT_ID}_FastQC
+-o /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/01_FastQC_Results/00_${ORG}_${PROJECT_ID}_FastQC
 
-echo "02_FastQC_Analysis script for ${PROJECT_ID} completed."
+echo "02_FastQC_Analysis script for ${PROJECT_ID} associated to ${ORG} completed."
