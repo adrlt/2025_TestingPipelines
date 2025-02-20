@@ -18,7 +18,7 @@ module load bioawk/1.0
 ##  Running Code
 #  Manually creating the PROJECT_ID, ORG variables
 #PROJECT_ID='PRJDB4386'
-#ORG=Protobothrops-mucrosquamatus
+#ORG='Protobothrops-mucrosquamatus'
 
 #  Code adapted from https://www.biostars.org/p/243552/#243649
 

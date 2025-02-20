@@ -22,7 +22,7 @@ source /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/00_TestEnv/bin/activ
 ##  Running Code
 #  Manually creating the PROJECT_ID, ORG variables
 #PROJECT_ID='PRJDB4386'
-#ORG=Protobothrops-mucrosquamatus
+#ORG='Protobothrops-mucrosquamatus'
 
 #  Create a MultiQC directory for the project
 mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/94_Results/00_${ORG}_${PROJECT_ID}_MultiQC

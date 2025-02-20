@@ -17,7 +17,7 @@ module load sratoolkit/3.0.0
 ##  Running Code
 #  Manually creating the PROJECT_ID, ORG variables
 #PROJECT_ID='PRJDB4386'
-#ORG=Protobothrops-mucrosquamatus
+#ORG='Protobothrops-mucrosquamatus'
 
 #  Create a RawData directory for the SRA files
 mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/95_RawData/00_${ORG}_${PROJECT_ID}_SRA_Files
