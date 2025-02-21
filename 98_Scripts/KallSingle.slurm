@@ -27,8 +27,8 @@ mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines
 #  For single-end reads
 #  Option -l: needed to specify the average fragment length
 #  Option -s: estimated standard deviation of fragment length
-#kallisto quant -i /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/93_CodingSqs/${ORG}/${ORG}_Index -o /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/03_Kallisto_Abundance/00_${ORG}_${PROJECT_ID}_Kallisto --single -l 200 -s 20 /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_${ORG}_${PROJECT_ID}_TrimG/*.fq 
+kallisto quant -i /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/93_CodingSqs/${ORG}/${ORG}_Index -o /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/03_Kallisto_Abundance/00_${ORG}_${PROJECT_ID}_Kallisto --single -l 40 -s 2 /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_${ORG}_${PROJECT_ID}_TrimG/Single/*.fq 
 #  For paired-end reads
-kallisto quant -i /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/93_CodingSqs/${ORG}/${ORG}_Index -o /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/03_Kallisto_Abundance/00_${ORG}_${PROJECT_ID}_Kallisto /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_${ORG}_${PROJECT_ID}_TrimG/*.fq
+#kallisto quant -i /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/93_CodingSqs/${ORG}/${ORG}_Index -o /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/03_Kallisto_Abundance/00_${ORG}_${PROJECT_ID}_Kallisto /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_${ORG}_${PROJECT_ID}_TrimG/*.fq
 
 echo "05.2_Kallisto_Abundance script for ${PROJECT_ID} associated to ${ORG} completed."

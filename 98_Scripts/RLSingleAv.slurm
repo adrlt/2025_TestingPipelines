@@ -21,7 +21,7 @@ module load bioawk/1.0
 #ORG='Protobothrops-mucrosquamatus'
 
 #  Create a ReadLength directory
-mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/94_Results/9404_TGReadLength/
+#mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/94_Results/9404_TGReadLength/
 
 #  Code adapted from https://www.biostars.org/p/243552/#243649
 
@@ -32,6 +32,6 @@ mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines
 #awk 'BEGIN { t=0.0;sq=0.0; n=0;} ;NR%4==2 {n++;L=length($0);t+=L;sq+=L*L;}END{m=t/n;printf("total %d avg=%f stddev=%f\n",n,m,sq/n-m*m);}'  $File >> 00_${ORG}_${PROJECT_ID}_EReads_MSD.txt
 #done
 
-awk 'BEGIN { t=0.0;sq=0.0; n=0;} ;NR%4==2 {n++;L=length($0);t+=L;sq+=L*L;}END{m=t/n;printf("total %d avg=%f stddev=%f\n",n,m,sq/n-m*m);}'  /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_${ORG}_${PROJECT_ID}_TrimG/*.fq > /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/94_Results/9404_TGReadLength/00_${ORG}_${PROJECT_ID}_Reads_MSD.txt
+awk 'BEGIN { t=0.0;sq=0.0; n=0;} ;NR%4==2 {n++;L=length($0);t+=L;sq+=L*L;}END{m=t/n;printf("total %d avg=%f stddev=%f\n",n,m,sq/n-m*m);}'  /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_${ORG}_${PROJECT_ID}_TrimG/Single/*.fq > /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/94_Results/9404_TGReadLength/00_${ORG}_${PROJECT_ID}_SingleReads_MSD.txt
 
 echo "04.2_ReadLengthSD script for ${PROJECT_ID} associated to ${ORG} completed."
