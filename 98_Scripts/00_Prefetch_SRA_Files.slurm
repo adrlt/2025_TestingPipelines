@@ -23,6 +23,6 @@ module load sratoolkit/3.0.0
 mkdir /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/95_RawData/00_${ORG}_${PROJECT_ID}_SRA_Files
 
 #  Prefetch the SRA files from Accession ID within the .TXT file associated with the PROJECT_ID 
-prefetch --option-file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/95_RawData/AccessionLists/00_${PROJECT_ID}_AL.txt -O /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/95_RawData/00_${ORG}_${PROJECT_ID}_SRA_Files
+prefetch --option-file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/95_RawData/AccessionLists/00_${PROJECT_ID}_AL.txt --max-size 99g -O /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/95_RawData/00_${ORG}_${PROJECT_ID}_SRA_Files
 
 echo "00_Prefetch_SRA_Files script for ${PROJECT_ID} associated with ${ORG} completed."
