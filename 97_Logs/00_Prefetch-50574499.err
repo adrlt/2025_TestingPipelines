@@ -1,0 +1,9 @@
+2025-02-20T15:36:09 prefetch.3.0.0: Current preference is set to retrieve SRA Normalized Format files with full base quality scores.
+2025-02-20T15:36:10 prefetch.3.0.0: 1) Downloading 'DRR049669'...
+2025-02-20T15:36:10 prefetch.3.0.0: SRA Normalized Format file is being retrieved, if this is different from your preference, it may be due to current file availability.
+2025-02-20T15:36:10 prefetch.3.0.0:  Downloading via HTTPS...
+2025-02-20T15:50:24 prefetch.3.0.0:  HTTPS download succeed
+2025-02-20T15:50:24 prefetch.3.0.0:   verifying 'DRR049669'...
+2025-02-20T15:55:39 prefetch.3.0.0:  'DRR049669' is valid
+2025-02-20T15:55:39 prefetch.3.0.0: 1) 'DRR049669' was downloaded successfully
+2025-02-20T15:55:39 prefetch.3.0.0: 'DRR049669' has 0 unresolved dependencies

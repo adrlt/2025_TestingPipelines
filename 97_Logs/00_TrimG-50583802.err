@@ -1,0 +1,3586 @@
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 5.0
+single-core operation.
+Proceeding with 'gzip' for decompression
+To decrease CPU usage of decompression, please install 'igzip' and run again
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049668_1.fastq <<)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	188	CTGTCTCTTATA	1000000	0.02
+Illumina	28	AGATCGGAAGAGC	1000000	0.00
+smallRNA	1	TGGAATTCTCGG	1000000	0.00
+Using Nextera adapter for trimming (count: 188). Second best hit was Illumina (count: 28)
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR049668_1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049668_1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j 1
+Writing final adapter and quality trimmed output to DRR049668_1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049668_1.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+110000000 sequences processed
+120000000 sequences processed
+130000000 sequences processed
+140000000 sequences processed
+150000000 sequences processed
+160000000 sequences processed
+170000000 sequences processed
+180000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049668_1.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             180,104,953
+Reads with adapters:                55,220,105 (30.7%)
+Reads written (passing filters):   180,104,953 (100.0%)
+
+Total basepairs processed: 41,284,015,335 bp
+Quality-trimmed:           1,267,233,854 bp (3.1%)
+Total written (filtered):  39,894,916,984 bp (96.6%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 55220105 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 23.7%
+  C: 28.2%
+  G: 19.3%
+  T: 28.8%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	38599806	45026238.2	0	38599806
+2	12185254	11256559.6	0	12185254
+3	2842257	2814139.9	0	2842257
+4	961559	703535.0	0	961559
+5	164756	175883.7	0	164756
+6	81803	43970.9	0	81803
+7	13869	10992.7	0	13869
+8	8478	2748.2	0	8478
+9	6096	687.0	0	2596 3500
+10	8687	171.8	1	238 8449
+11	5388	42.9	1	297 5091
+12	1590	10.7	1	79 1511
+13	1148	10.7	1	80 1068
+14	1373	10.7	1	119 1254
+15	1481	10.7	1	106 1375
+16	1432	10.7	1	133 1299
+17	1366	10.7	1	112 1254
+18	1455	10.7	1	126 1329
+19	1429	10.7	1	157 1272
+20	1444	10.7	1	176 1268
+21	1317	10.7	1	49 1268
+22	1381	10.7	1	131 1250
+23	1622	10.7	1	266 1356
+24	1615	10.7	1	114 1501
+25	1305	10.7	1	143 1162
+26	1353	10.7	1	130 1223
+27	1395	10.7	1	102 1293
+28	1530	10.7	1	194 1336
+29	1362	10.7	1	118 1244
+30	1333	10.7	1	69 1264
+31	1386	10.7	1	143 1243
+32	1337	10.7	1	107 1230
+33	1368	10.7	1	62 1306
+34	1433	10.7	1	117 1316
+35	1463	10.7	1	156 1307
+36	1346	10.7	1	160 1186
+37	1392	10.7	1	18 1374
+38	1336	10.7	1	45 1291
+39	1550	10.7	1	205 1345
+40	1352	10.7	1	88 1264
+41	1616	10.7	1	282 1334
+42	1596	10.7	1	241 1355
+43	1381	10.7	1	124 1257
+44	1457	10.7	1	204 1253
+45	1349	10.7	1	43 1306
+46	1311	10.7	1	84 1227
+47	1388	10.7	1	132 1256
+48	1538	10.7	1	265 1273
+49	1343	10.7	1	39 1304
+50	1266	10.7	1	21 1245
+51	1328	10.7	1	119 1209
+52	1405	10.7	1	126 1279
+53	1457	10.7	1	128 1329
+54	1405	10.7	1	120 1285
+55	1476	10.7	1	234 1242
+56	1408	10.7	1	125 1283
+57	1390	10.7	1	118 1272
+58	1416	10.7	1	129 1287
+59	1546	10.7	1	272 1274
+60	1394	10.7	1	132 1262
+61	1581	10.7	1	284 1297
+62	1967	10.7	1	602 1365
+63	1470	10.7	1	79 1391
+64	1354	10.7	1	25 1329
+65	1379	10.7	1	99 1280
+66	1428	10.7	1	136 1292
+67	1620	10.7	1	291 1329
+68	1581	10.7	1	46 1535
+69	1301	10.7	1	34 1267
+70	1514	10.7	1	197 1317
+71	1308	10.7	1	53 1255
+72	1388	10.7	1	18 1370
+73	1266	10.7	1	44 1222
+74	1275	10.7	1	71 1204
+75	1471	10.7	1	199 1272
+76	1346	10.7	1	138 1208
+77	1392	10.7	1	60 1332
+78	1364	10.7	1	54 1310
+79	1478	10.7	1	148 1330
+80	1393	10.7	1	118 1275
+81	1514	10.7	1	249 1265
+82	1320	10.7	1	44 1276
+83	1299	10.7	1	47 1252
+84	1322	10.7	1	93 1229
+85	1420	10.7	1	91 1329
+86	2434	10.7	1	1114 1320
+87	1623	10.7	1	251 1372
+88	1305	10.7	1	97 1208
+89	1383	10.7	1	152 1231
+90	1600	10.7	1	122 1478
+91	1431	10.7	1	136 1295
+92	1330	10.7	1	82 1248
+93	1297	10.7	1	75 1222
+94	1475	10.7	1	126 1349
+95	1592	10.7	1	271 1321
+96	1366	10.7	1	164 1202
+97	1324	10.7	1	85 1239
+98	1633	10.7	1	163 1470
+99	1571	10.7	1	280 1291
+100	1358	10.7	1	96 1262
+101	1285	10.7	1	88 1197
+102	1341	10.7	1	102 1239
+103	1325	10.7	1	83 1242
+104	1330	10.7	1	112 1218
+105	1422	10.7	1	118 1304
+106	1410	10.7	1	116 1294
+107	1337	10.7	1	114 1223
+108	1456	10.7	1	166 1290
+109	1286	10.7	1	66 1220
+110	1480	10.7	1	201 1279
+111	1427	10.7	1	121 1306
+112	1451	10.7	1	156 1295
+113	1416	10.7	1	145 1271
+114	1358	10.7	1	109 1249
+115	1476	10.7	1	158 1318
+116	1537	10.7	1	124 1413
+117	1457	10.7	1	196 1261
+118	1408	10.7	1	105 1303
+119	1464	10.7	1	97 1367
+120	1501	10.7	1	182 1319
+121	1483	10.7	1	182 1301
+122	1473	10.7	1	166 1307
+123	1358	10.7	1	106 1252
+124	1549	10.7	1	123 1426
+125	1423	10.7	1	208 1215
+126	1362	10.7	1	113 1249
+127	1530	10.7	1	144 1386
+128	1487	10.7	1	146 1341
+129	1789	10.7	1	268 1521
+130	1457	10.7	1	214 1243
+131	1365	10.7	1	188 1177
+132	1387	10.7	1	60 1327
+133	1554	10.7	1	225 1329
+134	1406	10.7	1	115 1291
+135	1387	10.7	1	81 1306
+136	1341	10.7	1	107 1234
+137	1275	10.7	1	61 1214
+138	1537	10.7	1	204 1333
+139	1371	10.7	1	57 1314
+140	1309	10.7	1	30 1279
+141	1372	10.7	1	133 1239
+142	1405	10.7	1	125 1280
+143	1423	10.7	1	71 1352
+144	1412	10.7	1	53 1359
+145	1375	10.7	1	144 1231
+146	1394	10.7	1	224 1170
+147	1298	10.7	1	55 1243
+148	1265	10.7	1	22 1243
+149	1472	10.7	1	255 1217
+150	1354	10.7	1	100 1254
+151	1347	10.7	1	94 1253
+152	1441	10.7	1	118 1323
+153	1503	10.7	1	153 1350
+154	1288	10.7	1	90 1198
+155	1408	10.7	1	126 1282
+156	1493	10.7	1	141 1352
+157	1428	10.7	1	232 1196
+158	1357	10.7	1	156 1201
+159	1427	10.7	1	114 1313
+160	1393	10.7	1	211 1182
+161	1294	10.7	1	64 1230
+162	1350	10.7	1	91 1259
+163	1456	10.7	1	43 1413
+164	1293	10.7	1	110 1183
+165	1433	10.7	1	152 1281
+166	1465	10.7	1	85 1380
+167	1284	10.7	1	73 1211
+168	1311	10.7	1	86 1225
+169	1416	10.7	1	143 1273
+170	1548	10.7	1	270 1278
+171	1613	10.7	1	320 1293
+172	1373	10.7	1	168 1205
+173	1741	10.7	1	494 1247
+174	1502	10.7	1	197 1305
+175	1662	10.7	1	342 1320
+176	1565	10.7	1	302 1263
+177	1374	10.7	1	91 1283
+178	1807	10.7	1	505 1302
+179	1410	10.7	1	54 1356
+180	1377	10.7	1	79 1298
+181	1413	10.7	1	145 1268
+182	1496	10.7	1	158 1338
+183	1324	10.7	1	73 1251
+184	1451	10.7	1	188 1263
+185	1320	10.7	1	103 1217
+186	1400	10.7	1	174 1226
+187	1387	10.7	1	187 1200
+188	1375	10.7	1	60 1315
+189	1329	10.7	1	84 1245
+190	1408	10.7	1	181 1227
+191	1499	10.7	1	177 1322
+192	1668	10.7	1	410 1258
+193	1417	10.7	1	140 1277
+194	1825	10.7	1	548 1277
+195	1378	10.7	1	124 1254
+196	1474	10.7	1	223 1251
+197	1571	10.7	1	289 1282
+198	1344	10.7	1	86 1258
+199	1350	10.7	1	23 1327
+200	1438	10.7	1	105 1333
+201	1472	10.7	1	181 1291
+202	1541	10.7	1	200 1341
+203	1474	10.7	1	282 1192
+204	1297	10.7	1	85 1212
+205	1371	10.7	1	91 1280
+206	1572	10.7	1	199 1373
+207	1584	10.7	1	220 1364
+208	1719	10.7	1	524 1195
+209	1378	10.7	1	117 1261
+210	1373	10.7	1	62 1311
+211	1477	10.7	1	177 1300
+212	1382	10.7	1	156 1226
+213	1502	10.7	1	263 1239
+214	1329	10.7	1	118 1211
+215	1441	10.7	1	252 1189
+216	1417	10.7	1	199 1218
+217	1447	10.7	1	103 1344
+218	1330	10.7	1	124 1206
+219	1510	10.7	1	244 1266
+220	1501	10.7	1	178 1323
+221	1373	10.7	1	103 1270
+222	1427	10.7	1	143 1284
+223	1447	10.7	1	185 1262
+224	1586	10.7	1	325 1261
+225	1553	10.7	1	300 1253
+226	1294	10.7	1	111 1183
+227	1301	10.7	1	68 1233
+228	1408	10.7	1	159 1249
+229	1523	10.7	1	195 1328
+230	1369	10.7	1	74 1295
+231	1267	10.7	1	94 1173
+232	1319	10.7	1	44 1275
+233	1258	10.7	1	106 1152
+234	1489	10.7	1	300 1189
+235	1421	10.7	1	44 1377
+236	1181	10.7	1	68 1113
+237	1355	10.7	1	163 1192
+238	1519	10.7	1	209 1310
+239	1494	10.7	1	102 1392
+240	1385	10.7	1	151 1234
+241	1357	10.7	1	109 1248
+242	1379	10.7	1	60 1319
+243	1427	10.7	1	148 1279
+244	1477	10.7	1	47 1430
+245	1316	10.7	1	58 1258
+246	1427	10.7	1	140 1287
+247	1330	10.7	1	44 1286
+248	1462	10.7	1	104 1358
+249	1277	10.7	1	188 1089
+250	1141	10.7	1	60 1081
+251	630	10.7	1	9 621
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049668_1.fastq
+=============================================
+180104953 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR049668_2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049668_2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR049668_2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049668_2.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+110000000 sequences processed
+120000000 sequences processed
+130000000 sequences processed
+140000000 sequences processed
+150000000 sequences processed
+160000000 sequences processed
+170000000 sequences processed
+180000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049668_2.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             180,104,953
+Reads with adapters:                48,635,228 (27.0%)
+Reads written (passing filters):   180,104,953 (100.0%)
+
+Total basepairs processed: 41,323,500,233 bp
+Quality-trimmed:           1,506,369,639 bp (3.6%)
+Total written (filtered):  39,706,979,632 bp (96.1%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 48635228 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.3%
+  C: 27.7%
+  G: 16.8%
+  T: 30.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	35217116	45026238.2	0	35217116
+2	7817576	11256559.6	0	7817576
+3	4455444	2814139.9	0	4455444
+4	573852	703535.0	0	573852
+5	155591	175883.7	0	155591
+6	49556	43970.9	0	49556
+7	14187	10992.7	0	14187
+8	5607	2748.2	0	5607
+9	5929	687.0	0	1731 4198
+10	8545	171.8	1	285 8260
+11	4186	42.9	1	182 4004
+12	1484	10.7	1	89 1395
+13	1223	10.7	1	51 1172
+14	1426	10.7	1	92 1334
+15	1380	10.7	1	105 1275
+16	1529	10.7	1	145 1384
+17	1416	10.7	1	101 1315
+18	1460	10.7	1	114 1346
+19	1489	10.7	1	183 1306
+20	1528	10.7	1	227 1301
+21	1442	10.7	1	85 1357
+22	1391	10.7	1	189 1202
+23	1414	10.7	1	150 1264
+24	1452	10.7	1	114 1338
+25	1551	10.7	1	178 1373
+26	1372	10.7	1	139 1233
+27	1510	10.7	1	167 1343
+28	1447	10.7	1	126 1321
+29	1497	10.7	1	192 1305
+30	1489	10.7	1	102 1387
+31	1444	10.7	1	110 1334
+32	1411	10.7	1	109 1302
+33	1440	10.7	1	88 1352
+34	1428	10.7	1	129 1299
+35	1420	10.7	1	127 1293
+36	1388	10.7	1	117 1271
+37	1365	10.7	1	61 1304
+38	1321	10.7	1	58 1263
+39	1543	10.7	1	210 1333
+40	1365	10.7	1	102 1263
+41	1527	10.7	1	228 1299
+42	1598	10.7	1	248 1350
+43	1427	10.7	1	140 1287
+44	1411	10.7	1	194 1217
+45	1373	10.7	1	89 1284
+46	1421	10.7	1	85 1336
+47	1366	10.7	1	144 1222
+48	1438	10.7	1	193 1245
+49	1372	10.7	1	56 1316
+50	1363	10.7	1	53 1310
+51	1353	10.7	1	120 1233
+52	1329	10.7	1	126 1203
+53	1407	10.7	1	116 1291
+54	1426	10.7	1	165 1261
+55	1352	10.7	1	124 1228
+56	1351	10.7	1	106 1245
+57	1359	10.7	1	111 1248
+58	1465	10.7	1	154 1311
+59	1493	10.7	1	208 1285
+60	1546	10.7	1	199 1347
+61	1418	10.7	1	197 1221
+62	1759	10.7	1	467 1292
+63	1419	10.7	1	125 1294
+64	1438	10.7	1	69 1369
+65	1529	10.7	1	188 1341
+66	1448	10.7	1	189 1259
+67	1486	10.7	1	197 1289
+68	1439	10.7	1	93 1346
+69	1274	10.7	1	82 1192
+70	1458	10.7	1	189 1269
+71	1349	10.7	1	81 1268
+72	1345	10.7	1	51 1294
+73	1416	10.7	1	95 1321
+74	1417	10.7	1	167 1250
+75	1511	10.7	1	174 1337
+76	1376	10.7	1	124 1252
+77	1353	10.7	1	72 1281
+78	1290	10.7	1	77 1213
+79	1392	10.7	1	113 1279
+80	1412	10.7	1	135 1277
+81	1402	10.7	1	202 1200
+82	1330	10.7	1	85 1245
+83	1352	10.7	1	139 1213
+84	1464	10.7	1	206 1258
+85	1470	10.7	1	238 1232
+86	1536	10.7	1	328 1208
+87	1337	10.7	1	101 1236
+88	1346	10.7	1	82 1264
+89	1296	10.7	1	108 1188
+90	1426	10.7	1	140 1286
+91	1350	10.7	1	124 1226
+92	1342	10.7	1	101 1241
+93	1419	10.7	1	112 1307
+94	1420	10.7	1	160 1260
+95	1489	10.7	1	191 1298
+96	1274	10.7	1	110 1164
+97	1324	10.7	1	140 1184
+98	1376	10.7	1	137 1239
+99	1509	10.7	1	168 1341
+100	1270	10.7	1	81 1189
+101	1271	10.7	1	91 1180
+102	1343	10.7	1	134 1209
+103	1321	10.7	1	116 1205
+104	1315	10.7	1	134 1181
+105	1277	10.7	1	74 1203
+106	1371	10.7	1	121 1250
+107	1340	10.7	1	117 1223
+108	1323	10.7	1	130 1193
+109	1305	10.7	1	83 1222
+110	1442	10.7	1	183 1259
+111	1397	10.7	1	100 1297
+112	1416	10.7	1	153 1263
+113	1399	10.7	1	205 1194
+114	1391	10.7	1	138 1253
+115	1266	10.7	1	112 1154
+116	1355	10.7	1	164 1191
+117	1414	10.7	1	254 1160
+118	1358	10.7	1	138 1220
+119	1393	10.7	1	86 1307
+120	1335	10.7	1	85 1250
+121	1395	10.7	1	131 1264
+122	1439	10.7	1	192 1247
+123	1372	10.7	1	115 1257
+124	1424	10.7	1	85 1339
+125	1220	10.7	1	75 1145
+126	1347	10.7	1	149 1198
+127	1384	10.7	1	142 1242
+128	1373	10.7	1	102 1271
+129	1525	10.7	1	215 1310
+130	1419	10.7	1	163 1256
+131	1344	10.7	1	163 1181
+132	1429	10.7	1	116 1313
+133	1412	10.7	1	156 1256
+134	1356	10.7	1	126 1230
+135	1273	10.7	1	65 1208
+136	1225	10.7	1	64 1161
+137	1293	10.7	1	107 1186
+138	1352	10.7	1	142 1210
+139	1383	10.7	1	146 1237
+140	1302	10.7	1	34 1268
+141	1283	10.7	1	114 1169
+142	1318	10.7	1	108 1210
+143	1261	10.7	1	71 1190
+144	1316	10.7	1	60 1256
+145	1345	10.7	1	160 1185
+146	1360	10.7	1	173 1187
+147	1322	10.7	1	75 1247
+148	1228	10.7	1	69 1159
+149	1358	10.7	1	193 1165
+150	1372	10.7	1	115 1257
+151	1362	10.7	1	123 1239
+152	1367	10.7	1	140 1227
+153	1322	10.7	1	78 1244
+154	1328	10.7	1	104 1224
+155	1337	10.7	1	99 1238
+156	1407	10.7	1	138 1269
+157	1380	10.7	1	173 1207
+158	1337	10.7	1	121 1216
+159	1391	10.7	1	145 1246
+160	1411	10.7	1	190 1221
+161	1290	10.7	1	120 1170
+162	1288	10.7	1	68 1220
+163	1295	10.7	1	105 1190
+164	1355	10.7	1	81 1274
+165	1359	10.7	1	158 1201
+166	1333	10.7	1	97 1236
+167	1239	10.7	1	67 1172
+168	1290	10.7	1	120 1170
+169	1381	10.7	1	135 1246
+170	1473	10.7	1	213 1260
+171	1556	10.7	1	336 1220
+172	1387	10.7	1	179 1208
+173	1548	10.7	1	348 1200
+174	1408	10.7	1	184 1224
+175	1485	10.7	1	279 1206
+176	1428	10.7	1	239 1189
+177	1360	10.7	1	130 1230
+178	1626	10.7	1	378 1248
+179	1364	10.7	1	105 1259
+180	1308	10.7	1	68 1240
+181	1311	10.7	1	147 1164
+182	1395	10.7	1	127 1268
+183	1426	10.7	1	96 1330
+184	1349	10.7	1	142 1207
+185	1293	10.7	1	101 1192
+186	1318	10.7	1	135 1183
+187	1326	10.7	1	167 1159
+188	1282	10.7	1	69 1213
+189	1328	10.7	1	117 1211
+190	1385	10.7	1	164 1221
+191	1297	10.7	1	101 1196
+192	1496	10.7	1	250 1246
+193	1363	10.7	1	129 1234
+194	1609	10.7	1	318 1291
+195	1418	10.7	1	154 1264
+196	1363	10.7	1	179 1184
+197	1366	10.7	1	174 1192
+198	1220	10.7	1	77 1143
+199	1338	10.7	1	44 1294
+200	1270	10.7	1	79 1191
+201	1393	10.7	1	134 1259
+202	1413	10.7	1	156 1257
+203	1344	10.7	1	152 1192
+204	1264	10.7	1	91 1173
+205	1305	10.7	1	88 1217
+206	1378	10.7	1	116 1262
+207	1395	10.7	1	124 1271
+208	1423	10.7	1	248 1175
+209	1278	10.7	1	83 1195
+210	1300	10.7	1	77 1223
+211	1436	10.7	1	150 1286
+212	1274	10.7	1	94 1180
+213	1402	10.7	1	211 1191
+214	1238	10.7	1	116 1122
+215	1334	10.7	1	145 1189
+216	1363	10.7	1	162 1201
+217	1339	10.7	1	123 1216
+218	1364	10.7	1	118 1246
+219	1259	10.7	1	80 1179
+220	1357	10.7	1	117 1240
+221	1308	10.7	1	120 1188
+222	1338	10.7	1	134 1204
+223	1402	10.7	1	135 1267
+224	1393	10.7	1	170 1223
+225	1413	10.7	1	257 1156
+226	1244	10.7	1	88 1156
+227	1256	10.7	1	85 1171
+228	1388	10.7	1	131 1257
+229	1297	10.7	1	98 1199
+230	1268	10.7	1	73 1195
+231	1240	10.7	1	99 1141
+232	1141	10.7	1	62 1079
+233	1170	10.7	1	102 1068
+234	1330	10.7	1	166 1164
+235	1294	10.7	1	53 1241
+236	1244	10.7	1	63 1181
+237	1265	10.7	1	139 1126
+238	1322	10.7	1	167 1155
+239	1276	10.7	1	70 1206
+240	1232	10.7	1	100 1132
+241	1296	10.7	1	76 1220
+242	1284	10.7	1	61 1223
+243	1292	10.7	1	121 1171
+244	1296	10.7	1	59 1237
+245	1349	10.7	1	61 1288
+246	1290	10.7	1	92 1198
+247	1302	10.7	1	119 1183
+248	1189	10.7	1	87 1102
+249	1029	10.7	1	79 950
+250	856	10.7	1	56 800
+251	483	10.7	1	11 472
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049668_2.fastq
+=============================================
+180104953 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files DRR049668_1_trimmed.fq and DRR049668_2_trimmed.fq
+file_1: DRR049668_1_trimmed.fq, file_2: DRR049668_2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: DRR049668_1_trimmed.fq and DRR049668_2_trimmed.fq <<<<<
+Writing validated paired-end Read 1 reads to DRR049668_1_val_1.fq
+Writing validated paired-end Read 2 reads to DRR049668_2_val_2.fq
+
+Total number of sequences analysed: 180104953
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 18031858 (10.01%)
+
+Deleting both intermediate output files DRR049668_1_trimmed.fq and DRR049668_2_trimmed.fq
+
+====================================================================================================
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR049669_1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049669_1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR049669_1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049669_1.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049669_1.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:              98,742,288
+Reads with adapters:                30,281,376 (30.7%)
+Reads written (passing filters):    98,742,288 (100.0%)
+
+Total basepairs processed: 22,730,594,150 bp
+Quality-trimmed:             700,012,263 bp (3.1%)
+Total written (filtered):  21,963,212,527 bp (96.6%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 30281376 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 23.7%
+  C: 28.3%
+  G: 19.3%
+  T: 28.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	21058267	24685572.0	0	21058267
+2	6823755	6171393.0	0	6823755
+3	1511638	1542848.2	0	1511638
+4	539289	385712.1	0	539289
+5	88774	96428.0	0	88774
+6	45589	24107.0	0	45589
+7	7578	6026.8	0	7578
+8	4663	1506.7	0	4663
+9	3405	376.7	0	1455 1950
+10	4799	94.2	1	116 4683
+11	2927	23.5	1	144 2783
+12	921	5.9	1	49 872
+13	704	5.9	1	41 663
+14	703	5.9	1	54 649
+15	780	5.9	1	53 727
+16	744	5.9	1	67 677
+17	778	5.9	1	56 722
+18	826	5.9	1	53 773
+19	854	5.9	1	80 774
+20	837	5.9	1	109 728
+21	716	5.9	1	24 692
+22	770	5.9	1	60 710
+23	932	5.9	1	165 767
+24	863	5.9	1	58 805
+25	736	5.9	1	81 655
+26	709	5.9	1	81 628
+27	780	5.9	1	61 719
+28	916	5.9	1	134 782
+29	817	5.9	1	70 747
+30	747	5.9	1	32 715
+31	771	5.9	1	60 711
+32	742	5.9	1	41 701
+33	732	5.9	1	39 693
+34	832	5.9	1	53 779
+35	810	5.9	1	90 720
+36	824	5.9	1	99 725
+37	673	5.9	1	15 658
+38	713	5.9	1	22 691
+39	855	5.9	1	129 726
+40	659	5.9	1	48 611
+41	894	5.9	1	119 775
+42	874	5.9	1	128 746
+43	781	5.9	1	55 726
+44	777	5.9	1	90 687
+45	728	5.9	1	25 703
+46	770	5.9	1	44 726
+47	863	5.9	1	82 781
+48	821	5.9	1	131 690
+49	759	5.9	1	23 736
+50	701	5.9	1	10 691
+51	743	5.9	1	65 678
+52	748	5.9	1	59 689
+53	721	5.9	1	59 662
+54	732	5.9	1	74 658
+55	800	5.9	1	113 687
+56	850	5.9	1	68 782
+57	804	5.9	1	68 736
+58	770	5.9	1	77 693
+59	861	5.9	1	144 717
+60	777	5.9	1	73 704
+61	887	5.9	1	152 735
+62	1104	5.9	1	329 775
+63	795	5.9	1	68 727
+64	776	5.9	1	17 759
+65	778	5.9	1	53 725
+66	754	5.9	1	74 680
+67	829	5.9	1	155 674
+68	813	5.9	1	40 773
+69	809	5.9	1	19 790
+70	817	5.9	1	110 707
+71	742	5.9	1	20 722
+72	780	5.9	1	13 767
+73	743	5.9	1	29 714
+74	709	5.9	1	45 664
+75	790	5.9	1	102 688
+76	760	5.9	1	74 686
+77	796	5.9	1	43 753
+78	807	5.9	1	34 773
+79	773	5.9	1	86 687
+80	800	5.9	1	67 733
+81	853	5.9	1	133 720
+82	706	5.9	1	12 694
+83	807	5.9	1	35 772
+84	796	5.9	1	50 746
+85	771	5.9	1	39 732
+86	1373	5.9	1	674 699
+87	885	5.9	1	150 735
+88	766	5.9	1	43 723
+89	782	5.9	1	97 685
+90	889	5.9	1	80 809
+91	804	5.9	1	80 724
+92	701	5.9	1	51 650
+93	714	5.9	1	42 672
+94	836	5.9	1	66 770
+95	800	5.9	1	142 658
+96	730	5.9	1	96 634
+97	735	5.9	1	36 699
+98	894	5.9	1	66 828
+99	858	5.9	1	171 687
+100	760	5.9	1	43 717
+101	728	5.9	1	54 674
+102	740	5.9	1	51 689
+103	768	5.9	1	52 716
+104	753	5.9	1	80 673
+105	772	5.9	1	58 714
+106	745	5.9	1	69 676
+107	708	5.9	1	62 646
+108	859	5.9	1	99 760
+109	721	5.9	1	51 670
+110	811	5.9	1	90 721
+111	756	5.9	1	58 698
+112	788	5.9	1	94 694
+113	789	5.9	1	64 725
+114	743	5.9	1	60 683
+115	806	5.9	1	89 717
+116	769	5.9	1	70 699
+117	718	5.9	1	84 634
+118	767	5.9	1	65 702
+119	860	5.9	1	54 806
+120	859	5.9	1	119 740
+121	761	5.9	1	108 653
+122	789	5.9	1	84 705
+123	765	5.9	1	51 714
+124	830	5.9	1	61 769
+125	759	5.9	1	120 639
+126	742	5.9	1	85 657
+127	795	5.9	1	67 728
+128	764	5.9	1	76 688
+129	999	5.9	1	147 852
+130	870	5.9	1	132 738
+131	779	5.9	1	106 673
+132	785	5.9	1	39 746
+133	803	5.9	1	96 707
+134	821	5.9	1	68 753
+135	828	5.9	1	54 774
+136	683	5.9	1	73 610
+137	723	5.9	1	53 670
+138	833	5.9	1	144 689
+139	752	5.9	1	38 714
+140	730	5.9	1	25 705
+141	828	5.9	1	77 751
+142	832	5.9	1	81 751
+143	768	5.9	1	54 714
+144	811	5.9	1	31 780
+145	740	5.9	1	89 651
+146	798	5.9	1	147 651
+147	787	5.9	1	49 738
+148	705	5.9	1	12 693
+149	875	5.9	1	173 702
+150	735	5.9	1	48 687
+151	724	5.9	1	49 675
+152	795	5.9	1	74 721
+153	760	5.9	1	82 678
+154	782	5.9	1	63 719
+155	852	5.9	1	87 765
+156	843	5.9	1	102 741
+157	801	5.9	1	149 652
+158	750	5.9	1	79 671
+159	758	5.9	1	59 699
+160	845	5.9	1	116 729
+161	746	5.9	1	50 696
+162	726	5.9	1	46 680
+163	811	5.9	1	44 767
+164	706	5.9	1	50 656
+165	796	5.9	1	88 708
+166	830	5.9	1	50 780
+167	699	5.9	1	63 636
+168	695	5.9	1	34 661
+169	797	5.9	1	86 711
+170	845	5.9	1	180 665
+171	896	5.9	1	201 695
+172	794	5.9	1	108 686
+173	1045	5.9	1	335 710
+174	836	5.9	1	123 713
+175	955	5.9	1	265 690
+176	887	5.9	1	188 699
+177	719	5.9	1	79 640
+178	1052	5.9	1	359 693
+179	777	5.9	1	37 740
+180	804	5.9	1	63 741
+181	716	5.9	1	87 629
+182	827	5.9	1	130 697
+183	693	5.9	1	40 653
+184	804	5.9	1	107 697
+185	739	5.9	1	60 679
+186	794	5.9	1	87 707
+187	813	5.9	1	119 694
+188	735	5.9	1	45 690
+189	712	5.9	1	50 662
+190	813	5.9	1	109 704
+191	779	5.9	1	79 700
+192	960	5.9	1	250 710
+193	808	5.9	1	90 718
+194	1124	5.9	1	391 733
+195	781	5.9	1	79 702
+196	878	5.9	1	137 741
+197	871	5.9	1	160 711
+198	789	5.9	1	44 745
+199	771	5.9	1	8 763
+200	765	5.9	1	57 708
+201	843	5.9	1	102 741
+202	786	5.9	1	102 684
+203	806	5.9	1	172 634
+204	729	5.9	1	47 682
+205	753	5.9	1	53 700
+206	892	5.9	1	127 765
+207	878	5.9	1	131 747
+208	988	5.9	1	309 679
+209	783	5.9	1	50 733
+210	776	5.9	1	38 738
+211	790	5.9	1	105 685
+212	824	5.9	1	109 715
+213	833	5.9	1	139 694
+214	757	5.9	1	63 694
+215	854	5.9	1	112 742
+216	777	5.9	1	109 668
+217	790	5.9	1	45 745
+218	770	5.9	1	80 690
+219	932	5.9	1	139 793
+220	803	5.9	1	104 699
+221	740	5.9	1	60 680
+222	786	5.9	1	81 705
+223	831	5.9	1	113 718
+224	882	5.9	1	199 683
+225	887	5.9	1	172 715
+226	687	5.9	1	60 627
+227	741	5.9	1	29 712
+228	764	5.9	1	83 681
+229	812	5.9	1	112 700
+230	728	5.9	1	48 680
+231	748	5.9	1	82 666
+232	689	5.9	1	25 664
+233	772	5.9	1	67 705
+234	868	5.9	1	193 675
+235	777	5.9	1	23 754
+236	727	5.9	1	29 698
+237	761	5.9	1	97 664
+238	792	5.9	1	104 688
+239	815	5.9	1	44 771
+240	762	5.9	1	95 667
+241	740	5.9	1	51 689
+242	784	5.9	1	48 736
+243	792	5.9	1	100 692
+244	813	5.9	1	18 795
+245	734	5.9	1	53 681
+246	821	5.9	1	95 726
+247	751	5.9	1	23 728
+248	793	5.9	1	65 728
+249	780	5.9	1	105 675
+250	675	5.9	1	43 632
+251	388	5.9	1	9 379
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049669_1.fastq
+=============================================
+98742288 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR049669_2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049669_2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR049669_2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049669_2.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049669_2.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:              98,742,288
+Reads with adapters:                27,174,460 (27.5%)
+Reads written (passing filters):    98,742,288 (100.0%)
+
+Total basepairs processed: 22,752,547,080 bp
+Quality-trimmed:             928,236,332 bp (4.1%)
+Total written (filtered):  21,762,721,507 bp (95.6%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 27174460 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 24.2%
+  C: 28.3%
+  G: 18.3%
+  T: 29.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	19055248	24685572.0	0	19055248
+2	5547231	6171393.0	0	5547231
+3	1792520	1542848.2	0	1792520
+4	456287	385712.1	0	456287
+5	82167	96428.0	0	82167
+6	36522	24107.0	0	36522
+7	7294	6026.8	0	7294
+8	3861	1506.7	0	3861
+9	3552	376.7	0	1285 2267
+10	4984	94.2	1	152 4832
+11	2763	23.5	1	133 2630
+12	890	5.9	1	49 841
+13	678	5.9	1	39 639
+14	746	5.9	1	47 699
+15	788	5.9	1	59 729
+16	793	5.9	1	97 696
+17	779	5.9	1	53 726
+18	797	5.9	1	73 724
+19	890	5.9	1	96 794
+20	819	5.9	1	103 716
+21	765	5.9	1	36 729
+22	837	5.9	1	88 749
+23	862	5.9	1	117 745
+24	876	5.9	1	80 796
+25	827	5.9	1	114 713
+26	791	5.9	1	87 704
+27	790	5.9	1	63 727
+28	880	5.9	1	126 754
+29	788	5.9	1	81 707
+30	764	5.9	1	48 716
+31	740	5.9	1	48 692
+32	788	5.9	1	58 730
+33	754	5.9	1	50 704
+34	812	5.9	1	57 755
+35	766	5.9	1	79 687
+36	823	5.9	1	76 747
+37	696	5.9	1	20 676
+38	731	5.9	1	39 692
+39	844	5.9	1	111 733
+40	764	5.9	1	56 708
+41	851	5.9	1	123 728
+42	859	5.9	1	150 709
+43	739	5.9	1	83 656
+44	793	5.9	1	110 683
+45	727	5.9	1	40 687
+46	821	5.9	1	61 760
+47	751	5.9	1	68 683
+48	774	5.9	1	109 665
+49	735	5.9	1	28 707
+50	699	5.9	1	22 677
+51	781	5.9	1	65 716
+52	797	5.9	1	97 700
+53	764	5.9	1	60 704
+54	839	5.9	1	101 738
+55	794	5.9	1	106 688
+56	735	5.9	1	49 686
+57	830	5.9	1	72 758
+58	816	5.9	1	100 716
+59	853	5.9	1	119 734
+60	845	5.9	1	105 740
+61	801	5.9	1	115 686
+62	1030	5.9	1	255 775
+63	772	5.9	1	67 705
+64	703	5.9	1	30 673
+65	836	5.9	1	89 747
+66	797	5.9	1	91 706
+67	800	5.9	1	102 698
+68	805	5.9	1	60 745
+69	769	5.9	1	33 736
+70	878	5.9	1	129 749
+71	729	5.9	1	49 680
+72	701	5.9	1	17 684
+73	730	5.9	1	55 675
+74	790	5.9	1	78 712
+75	807	5.9	1	126 681
+76	771	5.9	1	72 699
+77	808	5.9	1	47 761
+78	710	5.9	1	32 678
+79	765	5.9	1	53 712
+80	782	5.9	1	63 719
+81	833	5.9	1	125 708
+82	748	5.9	1	64 684
+83	795	5.9	1	60 735
+84	786	5.9	1	72 714
+85	753	5.9	1	75 678
+86	1038	5.9	1	360 678
+87	776	5.9	1	80 696
+88	715	5.9	1	87 628
+89	764	5.9	1	87 677
+90	754	5.9	1	45 709
+91	797	5.9	1	63 734
+92	733	5.9	1	63 670
+93	736	5.9	1	58 678
+94	832	5.9	1	67 765
+95	753	5.9	1	80 673
+96	715	5.9	1	63 652
+97	774	5.9	1	78 696
+98	861	5.9	1	65 796
+99	909	5.9	1	117 792
+100	794	5.9	1	52 742
+101	698	5.9	1	57 641
+102	792	5.9	1	87 705
+103	718	5.9	1	64 654
+104	768	5.9	1	74 694
+105	696	5.9	1	25 671
+106	748	5.9	1	67 681
+107	705	5.9	1	56 649
+108	756	5.9	1	83 673
+109	792	5.9	1	54 738
+110	826	5.9	1	117 709
+111	693	5.9	1	51 642
+112	786	5.9	1	100 686
+113	795	5.9	1	109 686
+114	754	5.9	1	102 652
+115	738	5.9	1	60 678
+116	815	5.9	1	112 703
+117	854	5.9	1	145 709
+118	774	5.9	1	91 683
+119	810	5.9	1	62 748
+120	753	5.9	1	63 690
+121	732	5.9	1	71 661
+122	789	5.9	1	80 709
+123	758	5.9	1	71 687
+124	763	5.9	1	44 719
+125	720	5.9	1	79 641
+126	728	5.9	1	54 674
+127	759	5.9	1	85 674
+128	761	5.9	1	75 686
+129	763	5.9	1	97 666
+130	700	5.9	1	74 626
+131	762	5.9	1	94 668
+132	774	5.9	1	66 708
+133	829	5.9	1	79 750
+134	799	5.9	1	89 710
+135	721	5.9	1	34 687
+136	645	5.9	1	54 591
+137	688	5.9	1	46 642
+138	806	5.9	1	118 688
+139	732	5.9	1	47 685
+140	701	5.9	1	28 673
+141	724	5.9	1	69 655
+142	732	5.9	1	93 639
+143	738	5.9	1	61 677
+144	743	5.9	1	48 695
+145	737	5.9	1	78 659
+146	762	5.9	1	124 638
+147	704	5.9	1	52 652
+148	687	5.9	1	24 663
+149	749	5.9	1	128 621
+150	718	5.9	1	61 657
+151	711	5.9	1	54 657
+152	810	5.9	1	81 729
+153	731	5.9	1	55 676
+154	705	5.9	1	48 657
+155	715	5.9	1	56 659
+156	737	5.9	1	74 663
+157	760	5.9	1	123 637
+158	741	5.9	1	64 677
+159	747	5.9	1	88 659
+160	754	5.9	1	119 635
+161	728	5.9	1	71 657
+162	712	5.9	1	54 658
+163	779	5.9	1	63 716
+164	702	5.9	1	61 641
+165	791	5.9	1	97 694
+166	732	5.9	1	68 664
+167	702	5.9	1	67 635
+168	713	5.9	1	73 640
+169	765	5.9	1	77 688
+170	891	5.9	1	185 706
+171	854	5.9	1	177 677
+172	753	5.9	1	117 636
+173	879	5.9	1	211 668
+174	805	5.9	1	138 667
+175	897	5.9	1	202 695
+176	838	5.9	1	133 705
+177	724	5.9	1	70 654
+178	890	5.9	1	232 658
+179	715	5.9	1	49 666
+180	761	5.9	1	68 693
+181	794	5.9	1	80 714
+182	800	5.9	1	77 723
+183	685	5.9	1	41 644
+184	718	5.9	1	68 650
+185	758	5.9	1	81 677
+186	750	5.9	1	62 688
+187	781	5.9	1	102 679
+188	687	5.9	1	58 629
+189	723	5.9	1	67 656
+190	744	5.9	1	60 684
+191	745	5.9	1	52 693
+192	872	5.9	1	199 673
+193	741	5.9	1	82 659
+194	878	5.9	1	220 658
+195	779	5.9	1	90 689
+196	758	5.9	1	102 656
+197	783	5.9	1	119 664
+198	730	5.9	1	49 681
+199	698	5.9	1	18 680
+200	727	5.9	1	55 672
+201	748	5.9	1	67 681
+202	747	5.9	1	91 656
+203	673	5.9	1	70 603
+204	740	5.9	1	61 679
+205	701	5.9	1	59 642
+206	704	5.9	1	76 628
+207	738	5.9	1	83 655
+208	749	5.9	1	136 613
+209	712	5.9	1	60 652
+210	742	5.9	1	43 699
+211	808	5.9	1	87 721
+212	732	5.9	1	58 674
+213	785	5.9	1	118 667
+214	711	5.9	1	61 650
+215	723	5.9	1	66 657
+216	752	5.9	1	94 658
+217	703	5.9	1	76 627
+218	695	5.9	1	67 628
+219	752	5.9	1	53 699
+220	702	5.9	1	62 640
+221	661	5.9	1	60 601
+222	760	5.9	1	85 675
+223	769	5.9	1	85 684
+224	712	5.9	1	86 626
+225	767	5.9	1	119 648
+226	730	5.9	1	63 667
+227	699	5.9	1	40 659
+228	712	5.9	1	60 652
+229	750	5.9	1	61 689
+230	694	5.9	1	48 646
+231	726	5.9	1	67 659
+232	650	5.9	1	34 616
+233	700	5.9	1	61 639
+234	774	5.9	1	110 664
+235	727	5.9	1	42 685
+236	679	5.9	1	45 634
+237	686	5.9	1	63 623
+238	679	5.9	1	62 617
+239	704	5.9	1	32 672
+240	675	5.9	1	62 613
+241	677	5.9	1	40 637
+242	733	5.9	1	41 692
+243	719	5.9	1	62 657
+244	705	5.9	1	31 674
+245	744	5.9	1	45 699
+246	684	5.9	1	54 630
+247	673	5.9	1	38 635
+248	674	5.9	1	44 630
+249	612	5.9	1	60 552
+250	497	5.9	1	31 466
+251	223	5.9	1	3 220
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR049669_2.fastq
+=============================================
+98742288 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files DRR049669_1_trimmed.fq and DRR049669_2_trimmed.fq
+file_1: DRR049669_1_trimmed.fq, file_2: DRR049669_2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: DRR049669_1_trimmed.fq and DRR049669_2_trimmed.fq <<<<<
+Writing validated paired-end Read 1 reads to DRR049669_1_val_1.fq
+Writing validated paired-end Read 2 reads to DRR049669_2_val_2.fq
+
+Total number of sequences analysed: 98742288
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 9606573 (9.73%)
+
+Deleting both intermediate output files DRR049669_1_trimmed.fq and DRR049669_2_trimmed.fq
+
+====================================================================================================
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076623_1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076623_1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076623_1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076623_1.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076623_1.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             108,852,821
+Reads with adapters:                33,194,655 (30.5%)
+Reads written (passing filters):   108,852,821 (100.0%)
+
+Total basepairs processed: 16,327,923,150 bp
+Quality-trimmed:             158,469,854 bp (1.0%)
+Total written (filtered):  16,110,624,903 bp (98.7%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 33194655 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 23.6%
+  C: 25.9%
+  G: 20.5%
+  T: 30.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	23138988	27213205.2	0	23138988
+2	7224668	6803301.3	0	7224668
+3	2002753	1700825.3	0	2002753
+4	486077	425206.3	0	486077
+5	111206	106301.6	0	111206
+6	51593	26575.4	0	51593
+7	10144	6643.8	0	10144
+8	5616	1661.0	0	5616
+9	5026	415.2	0	1347 3679
+10	6511	103.8	1	205 6306
+11	3033	26.0	1	157 2876
+12	1214	6.5	1	73 1141
+13	941	6.5	1	79 862
+14	1002	6.5	1	36 966
+15	1124	6.5	1	94 1030
+16	1084	6.5	1	71 1013
+17	1054	6.5	1	74 980
+18	1095	6.5	1	19 1076
+19	1159	6.5	1	80 1079
+20	1157	6.5	1	112 1045
+21	1158	6.5	1	108 1050
+22	1096	6.5	1	54 1042
+23	1064	6.5	1	41 1023
+24	1156	6.5	1	77 1079
+25	1098	6.5	1	71 1027
+26	1099	6.5	1	85 1014
+27	1093	6.5	1	77 1016
+28	1112	6.5	1	75 1037
+29	1209	6.5	1	137 1072
+30	1180	6.5	1	80 1100
+31	1093	6.5	1	106 987
+32	1083	6.5	1	98 985
+33	1076	6.5	1	82 994
+34	1183	6.5	1	66 1117
+35	993	6.5	1	39 954
+36	996	6.5	1	16 980
+37	1169	6.5	1	54 1115
+38	1111	6.5	1	105 1006
+39	992	6.5	1	26 966
+40	1033	6.5	1	48 985
+41	1033	6.5	1	30 1003
+42	999	6.5	1	53 946
+43	999	6.5	1	103 896
+44	1021	6.5	1	76 945
+45	1087	6.5	1	29 1058
+46	1078	6.5	1	90 988
+47	1087	6.5	1	80 1007
+48	1121	6.5	1	66 1055
+49	1001	6.5	1	85 916
+50	1078	6.5	1	52 1026
+51	1052	6.5	1	59 993
+52	1051	6.5	1	70 981
+53	998	6.5	1	36 962
+54	1022	6.5	1	53 969
+55	986	6.5	1	57 929
+56	1011	6.5	1	86 925
+57	1149	6.5	1	138 1011
+58	999	6.5	1	39 960
+59	1056	6.5	1	58 998
+60	940	6.5	1	86 854
+61	1042	6.5	1	42 1000
+62	942	6.5	1	45 897
+63	998	6.5	1	46 952
+64	1016	6.5	1	52 964
+65	951	6.5	1	19 932
+66	933	6.5	1	31 902
+67	1001	6.5	1	40 961
+68	986	6.5	1	32 954
+69	1031	6.5	1	65 966
+70	1050	6.5	1	129 921
+71	1061	6.5	1	75 986
+72	951	6.5	1	80 871
+73	1081	6.5	1	111 970
+74	992	6.5	1	69 923
+75	1171	6.5	1	281 890
+76	1187	6.5	1	180 1007
+77	1053	6.5	1	95 958
+78	1023	6.5	1	85 938
+79	966	6.5	1	24 942
+80	926	6.5	1	34 892
+81	907	6.5	1	86 821
+82	984	6.5	1	81 903
+83	1019	6.5	1	71 948
+84	942	6.5	1	57 885
+85	1033	6.5	1	109 924
+86	1023	6.5	1	87 936
+87	1053	6.5	1	68 985
+88	1030	6.5	1	74 956
+89	1046	6.5	1	87 959
+90	970	6.5	1	90 880
+91	1061	6.5	1	104 957
+92	1125	6.5	1	100 1025
+93	1053	6.5	1	70 983
+94	1099	6.5	1	149 950
+95	1112	6.5	1	167 945
+96	1104	6.5	1	103 1001
+97	1156	6.5	1	120 1036
+98	1106	6.5	1	86 1020
+99	1003	6.5	1	53 950
+100	1238	6.5	1	227 1011
+101	1113	6.5	1	143 970
+102	1039	6.5	1	60 979
+103	1055	6.5	1	59 996
+104	1034	6.5	1	76 958
+105	1052	6.5	1	126 926
+106	997	6.5	1	84 913
+107	1107	6.5	1	115 992
+108	980	6.5	1	107 873
+109	1076	6.5	1	171 905
+110	996	6.5	1	81 915
+111	971	6.5	1	90 881
+112	1104	6.5	1	121 983
+113	1042	6.5	1	91 951
+114	937	6.5	1	35 902
+115	1093	6.5	1	99 994
+116	1227	6.5	1	79 1148
+117	1058	6.5	1	114 944
+118	1078	6.5	1	86 992
+119	1108	6.5	1	52 1056
+120	969	6.5	1	67 902
+121	1098	6.5	1	88 1010
+122	1106	6.5	1	98 1008
+123	1142	6.5	1	139 1003
+124	1127	6.5	1	86 1041
+125	988	6.5	1	62 926
+126	1117	6.5	1	94 1023
+127	1135	6.5	1	86 1049
+128	1121	6.5	1	64 1057
+129	1105	6.5	1	63 1042
+130	1145	6.5	1	65 1080
+131	1072	6.5	1	42 1030
+132	1031	6.5	1	28 1003
+133	942	6.5	1	26 916
+134	1238	6.5	1	77 1161
+135	1256	6.5	1	77 1179
+136	1146	6.5	1	76 1070
+137	1042	6.5	1	64 978
+138	1149	6.5	1	59 1090
+139	1241	6.5	1	61 1180
+140	1015	6.5	1	63 952
+141	1156	6.5	1	72 1084
+142	1211	6.5	1	44 1167
+143	1142	6.5	1	41 1101
+144	1103	6.5	1	33 1070
+145	1136	6.5	1	67 1069
+146	1333	6.5	1	101 1232
+147	1256	6.5	1	105 1151
+148	1142	6.5	1	79 1063
+149	1054	6.5	1	72 982
+150	1238	6.5	1	68 1170
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076623_1.fastq
+=============================================
+108852821 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076623_2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076623_2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076623_2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076623_2.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076623_2.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             108,852,821
+Reads with adapters:                32,819,028 (30.1%)
+Reads written (passing filters):   108,852,821 (100.0%)
+
+Total basepairs processed: 16,327,923,150 bp
+Quality-trimmed:             763,162,854 bp (4.7%)
+Total written (filtered):  15,507,562,760 bp (95.0%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 32819028 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 23.4%
+  C: 26.1%
+  G: 20.6%
+  T: 29.3%
+  none/other: 0.7%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	23360146	27213205.2	0	23360146
+2	6728037	6803301.3	0	6728037
+3	1948497	1700825.3	0	1948497
+4	452385	425206.3	0	452385
+5	108260	106301.6	0	108260
+6	48516	26575.4	0	48516
+7	9880	6643.8	0	9880
+8	5503	1661.0	0	5503
+9	4758	415.2	0	1270 3488
+10	6251	103.8	1	214 6037
+11	2917	26.0	1	120 2797
+12	1162	6.5	1	70 1092
+13	995	6.5	1	70 925
+14	1013	6.5	1	53 960
+15	1055	6.5	1	70 985
+16	1079	6.5	1	84 995
+17	1023	6.5	1	53 970
+18	1106	6.5	1	24 1082
+19	1162	6.5	1	72 1090
+20	1101	6.5	1	92 1009
+21	1111	6.5	1	92 1019
+22	1170	6.5	1	72 1098
+23	1035	6.5	1	50 985
+24	1122	6.5	1	70 1052
+25	1141	6.5	1	81 1060
+26	1075	6.5	1	66 1009
+27	1130	6.5	1	70 1060
+28	1127	6.5	1	71 1056
+29	1133	6.5	1	98 1035
+30	1020	6.5	1	76 944
+31	1053	6.5	1	81 972
+32	1080	6.5	1	98 982
+33	1064	6.5	1	71 993
+34	1088	6.5	1	76 1012
+35	968	6.5	1	41 927
+36	1026	6.5	1	16 1010
+37	1151	6.5	1	58 1093
+38	1088	6.5	1	98 990
+39	1059	6.5	1	28 1031
+40	1055	6.5	1	46 1009
+41	1023	6.5	1	33 990
+42	1008	6.5	1	61 947
+43	1055	6.5	1	69 986
+44	1025	6.5	1	66 959
+45	1065	6.5	1	32 1033
+46	1054	6.5	1	56 998
+47	1028	6.5	1	67 961
+48	1068	6.5	1	75 993
+49	930	6.5	1	64 866
+50	913	6.5	1	39 874
+51	1028	6.5	1	57 971
+52	960	6.5	1	64 896
+53	960	6.5	1	39 921
+54	1028	6.5	1	70 958
+55	972	6.5	1	64 908
+56	1008	6.5	1	70 938
+57	1065	6.5	1	121 944
+58	926	6.5	1	42 884
+59	977	6.5	1	70 907
+60	1054	6.5	1	93 961
+61	930	6.5	1	54 876
+62	946	6.5	1	31 915
+63	1010	6.5	1	70 940
+64	1005	6.5	1	62 943
+65	968	6.5	1	35 933
+66	992	6.5	1	45 947
+67	1017	6.5	1	60 957
+68	927	6.5	1	31 896
+69	940	6.5	1	51 889
+70	983	6.5	1	101 882
+71	994	6.5	1	63 931
+72	981	6.5	1	94 887
+73	1005	6.5	1	111 894
+74	1027	6.5	1	84 943
+75	1146	6.5	1	230 916
+76	1167	6.5	1	149 1018
+77	1031	6.5	1	73 958
+78	999	6.5	1	70 929
+79	909	6.5	1	34 875
+80	916	6.5	1	39 877
+81	968	6.5	1	75 893
+82	955	6.5	1	66 889
+83	996	6.5	1	104 892
+84	893	6.5	1	62 831
+85	966	6.5	1	100 866
+86	1006	6.5	1	97 909
+87	1027	6.5	1	115 912
+88	986	6.5	1	87 899
+89	1037	6.5	1	82 955
+90	997	6.5	1	79 918
+91	1005	6.5	1	95 910
+92	886	6.5	1	75 811
+93	1005	6.5	1	63 942
+94	1054	6.5	1	145 909
+95	1101	6.5	1	158 943
+96	963	6.5	1	79 884
+97	1061	6.5	1	129 932
+98	1002	6.5	1	98 904
+99	972	6.5	1	48 924
+100	1244	6.5	1	217 1027
+101	1064	6.5	1	136 928
+102	1024	6.5	1	73 951
+103	908	6.5	1	63 845
+104	1015	6.5	1	87 928
+105	933	6.5	1	78 855
+106	1008	6.5	1	79 929
+107	1071	6.5	1	118 953
+108	947	6.5	1	94 853
+109	983	6.5	1	101 882
+110	989	6.5	1	79 910
+111	967	6.5	1	104 863
+112	977	6.5	1	96 881
+113	1013	6.5	1	123 890
+114	944	6.5	1	52 892
+115	1127	6.5	1	76 1051
+116	1176	6.5	1	66 1110
+117	1081	6.5	1	144 937
+118	1107	6.5	1	88 1019
+119	1089	6.5	1	62 1027
+120	973	6.5	1	36 937
+121	952	6.5	1	57 895
+122	1069	6.5	1	114 955
+123	1031	6.5	1	138 893
+124	1011	6.5	1	74 937
+125	938	6.5	1	52 886
+126	1063	6.5	1	88 975
+127	1157	6.5	1	82 1075
+128	1099	6.5	1	60 1039
+129	1200	6.5	1	81 1119
+130	1110	6.5	1	67 1043
+131	1067	6.5	1	51 1016
+132	976	6.5	1	36 940
+133	899	6.5	1	35 864
+134	1216	6.5	1	71 1145
+135	1233	6.5	1	87 1146
+136	1048	6.5	1	55 993
+137	994	6.5	1	41 953
+138	1114	6.5	1	65 1049
+139	1265	6.5	1	77 1188
+140	1022	6.5	1	71 951
+141	1045	6.5	1	50 995
+142	1131	6.5	1	36 1095
+143	1007	6.5	1	43 964
+144	1021	6.5	1	42 979
+145	1153	6.5	1	74 1079
+146	1082	6.5	1	78 1004
+147	1102	6.5	1	110 992
+148	1009	6.5	1	65 944
+149	960	6.5	1	66 894
+150	952	6.5	1	60 892
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076623_2.fastq
+=============================================
+108852821 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files DRR076623_1_trimmed.fq and DRR076623_2_trimmed.fq
+file_1: DRR076623_1_trimmed.fq, file_2: DRR076623_2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: DRR076623_1_trimmed.fq and DRR076623_2_trimmed.fq <<<<<
+Writing validated paired-end Read 1 reads to DRR076623_1_val_1.fq
+Writing validated paired-end Read 2 reads to DRR076623_2_val_2.fq
+
+Total number of sequences analysed: 108852821
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 2756334 (2.53%)
+
+Deleting both intermediate output files DRR076623_1_trimmed.fq and DRR076623_2_trimmed.fq
+
+====================================================================================================
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076624_1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076624_1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076624_1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076624_1.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076624_1.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             108,416,583
+Reads with adapters:                32,329,215 (29.8%)
+Reads written (passing filters):   108,416,583 (100.0%)
+
+Total basepairs processed: 16,262,487,450 bp
+Quality-trimmed:              88,829,325 bp (0.5%)
+Total written (filtered):  16,117,425,013 bp (99.1%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 32329215 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 24.0%
+  C: 25.9%
+  G: 20.4%
+  T: 29.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22480299	27104145.8	0	22480299
+2	7106357	6776036.4	0	7106357
+3	1947350	1694009.1	0	1947350
+4	487144	423502.3	0	487144
+5	105255	105875.6	0	105255
+6	43720	26468.9	0	43720
+7	9044	6617.2	0	9044
+8	4588	1654.3	0	4588
+9	4788	413.6	0	1208 3580
+10	6417	103.4	1	229 6188
+11	2927	25.8	1	149 2778
+12	1106	6.5	1	100 1006
+13	958	6.5	1	144 814
+14	916	6.5	1	69 847
+15	923	6.5	1	129 794
+16	961	6.5	1	142 819
+17	948	6.5	1	114 834
+18	869	6.5	1	55 814
+19	968	6.5	1	126 842
+20	1036	6.5	1	200 836
+21	1029	6.5	1	189 840
+22	987	6.5	1	127 860
+23	912	6.5	1	126 786
+24	1027	6.5	1	102 925
+25	1032	6.5	1	148 884
+26	908	6.5	1	118 790
+27	951	6.5	1	140 811
+28	954	6.5	1	148 806
+29	915	6.5	1	155 760
+30	881	6.5	1	98 783
+31	977	6.5	1	162 815
+32	989	6.5	1	164 825
+33	995	6.5	1	160 835
+34	926	6.5	1	88 838
+35	911	6.5	1	45 866
+36	864	6.5	1	26 838
+37	978	6.5	1	94 884
+38	989	6.5	1	167 822
+39	779	6.5	1	23 756
+40	989	6.5	1	94 895
+41	814	6.5	1	53 761
+42	960	6.5	1	85 875
+43	892	6.5	1	132 760
+44	1023	6.5	1	155 868
+45	909	6.5	1	50 859
+46	815	6.5	1	64 751
+47	950	6.5	1	162 788
+48	1008	6.5	1	122 886
+49	949	6.5	1	113 836
+50	934	6.5	1	107 827
+51	924	6.5	1	96 828
+52	875	6.5	1	84 791
+53	888	6.5	1	87 801
+54	931	6.5	1	98 833
+55	918	6.5	1	82 836
+56	921	6.5	1	101 820
+57	929	6.5	1	75 854
+58	830	6.5	1	67 763
+59	894	6.5	1	112 782
+60	882	6.5	1	106 776
+61	839	6.5	1	68 771
+62	855	6.5	1	48 807
+63	838	6.5	1	65 773
+64	843	6.5	1	121 722
+65	771	6.5	1	24 747
+66	873	6.5	1	49 824
+67	952	6.5	1	95 857
+68	861	6.5	1	32 829
+69	935	6.5	1	96 839
+70	946	6.5	1	183 763
+71	892	6.5	1	108 784
+72	928	6.5	1	133 795
+73	982	6.5	1	141 841
+74	897	6.5	1	74 823
+75	968	6.5	1	115 853
+76	1005	6.5	1	153 852
+77	953	6.5	1	150 803
+78	919	6.5	1	112 807
+79	821	6.5	1	69 752
+80	863	6.5	1	60 803
+81	945	6.5	1	107 838
+82	938	6.5	1	130 808
+83	953	6.5	1	105 848
+84	917	6.5	1	128 789
+85	937	6.5	1	133 804
+86	967	6.5	1	180 787
+87	1046	6.5	1	198 848
+88	864	6.5	1	100 764
+89	820	6.5	1	95 725
+90	991	6.5	1	153 838
+91	938	6.5	1	183 755
+92	939	6.5	1	132 807
+93	901	6.5	1	104 797
+94	919	6.5	1	140 779
+95	1066	6.5	1	240 826
+96	966	6.5	1	165 801
+97	946	6.5	1	160 786
+98	959	6.5	1	141 818
+99	818	6.5	1	79 739
+100	908	6.5	1	173 735
+101	959	6.5	1	176 783
+102	918	6.5	1	91 827
+103	919	6.5	1	104 815
+104	979	6.5	1	146 833
+105	1000	6.5	1	147 853
+106	947	6.5	1	109 838
+107	925	6.5	1	166 759
+108	978	6.5	1	175 803
+109	981	6.5	1	183 798
+110	982	6.5	1	97 885
+111	941	6.5	1	171 770
+112	961	6.5	1	199 762
+113	956	6.5	1	195 761
+114	900	6.5	1	69 831
+115	981	6.5	1	172 809
+116	973	6.5	1	140 833
+117	967	6.5	1	178 789
+118	1063	6.5	1	187 876
+119	991	6.5	1	118 873
+120	925	6.5	1	120 805
+121	1036	6.5	1	114 922
+122	993	6.5	1	166 827
+123	981	6.5	1	170 811
+124	1048	6.5	1	174 874
+125	957	6.5	1	128 829
+126	1038	6.5	1	200 838
+127	981	6.5	1	124 857
+128	949	6.5	1	152 797
+129	968	6.5	1	111 857
+130	947	6.5	1	126 821
+131	947	6.5	1	100 847
+132	894	6.5	1	53 841
+133	892	6.5	1	86 806
+134	973	6.5	1	119 854
+135	1101	6.5	1	191 910
+136	1015	6.5	1	162 853
+137	1011	6.5	1	155 856
+138	963	6.5	1	117 846
+139	985	6.5	1	124 861
+140	848	6.5	1	90 758
+141	962	6.5	1	111 851
+142	974	6.5	1	80 894
+143	981	6.5	1	120 861
+144	894	6.5	1	41 853
+145	973	6.5	1	121 852
+146	1060	6.5	1	183 877
+147	1092	6.5	1	220 872
+148	1019	6.5	1	189 830
+149	878	6.5	1	123 755
+150	1117	6.5	1	97 1020
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076624_1.fastq
+=============================================
+108416583 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076624_2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076624_2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076624_2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076624_2.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076624_2.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             108,416,583
+Reads with adapters:                31,938,186 (29.5%)
+Reads written (passing filters):   108,416,583 (100.0%)
+
+Total basepairs processed: 16,262,487,450 bp
+Quality-trimmed:             762,910,600 bp (4.7%)
+Total written (filtered):  15,444,937,171 bp (95.0%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 31938186 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 24.0%
+  C: 26.7%
+  G: 20.1%
+  T: 29.0%
+  none/other: 0.3%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22693074	27104145.8	0	22693074
+2	6646003	6776036.4	0	6646003
+3	1852637	1694009.1	0	1852637
+4	451323	423502.3	0	451323
+5	100877	105875.6	0	100877
+6	40467	26468.9	0	40467
+7	8721	6617.2	0	8721
+8	4337	1654.3	0	4337
+9	4590	413.6	0	1228 3362
+10	6168	103.4	1	274 5894
+11	2674	25.8	1	134 2540
+12	1041	6.5	1	104 937
+13	941	6.5	1	125 816
+14	928	6.5	1	85 843
+15	935	6.5	1	131 804
+16	945	6.5	1	122 823
+17	906	6.5	1	103 803
+18	828	6.5	1	48 780
+19	953	6.5	1	115 838
+20	1060	6.5	1	206 854
+21	1042	6.5	1	216 826
+22	921	6.5	1	121 800
+23	847	6.5	1	81 766
+24	954	6.5	1	158 796
+25	984	6.5	1	144 840
+26	986	6.5	1	145 841
+27	915	6.5	1	123 792
+28	985	6.5	1	143 842
+29	930	6.5	1	117 813
+30	941	6.5	1	139 802
+31	958	6.5	1	173 785
+32	983	6.5	1	178 805
+33	955	6.5	1	132 823
+34	958	6.5	1	112 846
+35	916	6.5	1	61 855
+36	788	6.5	1	30 758
+37	895	6.5	1	109 786
+38	1017	6.5	1	158 859
+39	779	6.5	1	45 734
+40	926	6.5	1	81 845
+41	872	6.5	1	66 806
+42	891	6.5	1	111 780
+43	963	6.5	1	163 800
+44	970	6.5	1	104 866
+45	872	6.5	1	57 815
+46	863	6.5	1	90 773
+47	1003	6.5	1	177 826
+48	904	6.5	1	104 800
+49	825	6.5	1	94 731
+50	845	6.5	1	68 777
+51	889	6.5	1	80 809
+52	939	6.5	1	113 826
+53	836	6.5	1	90 746
+54	910	6.5	1	81 829
+55	899	6.5	1	78 821
+56	884	6.5	1	79 805
+57	893	6.5	1	72 821
+58	865	6.5	1	84 781
+59	901	6.5	1	110 791
+60	881	6.5	1	111 770
+61	867	6.5	1	63 804
+62	766	6.5	1	31 735
+63	873	6.5	1	71 802
+64	955	6.5	1	105 850
+65	781	6.5	1	33 748
+66	758	6.5	1	49 709
+67	831	6.5	1	101 730
+68	793	6.5	1	40 753
+69	940	6.5	1	81 859
+70	964	6.5	1	178 786
+71	872	6.5	1	97 775
+72	869	6.5	1	137 732
+73	910	6.5	1	133 777
+74	938	6.5	1	73 865
+75	857	6.5	1	103 754
+76	878	6.5	1	158 720
+77	902	6.5	1	143 759
+78	903	6.5	1	138 765
+79	805	6.5	1	52 753
+80	828	6.5	1	46 782
+81	979	6.5	1	155 824
+82	975	6.5	1	153 822
+83	932	6.5	1	126 806
+84	857	6.5	1	119 738
+85	986	6.5	1	167 819
+86	968	6.5	1	179 789
+87	952	6.5	1	168 784
+88	861	6.5	1	106 755
+89	951	6.5	1	117 834
+90	903	6.5	1	133 770
+91	900	6.5	1	154 746
+92	969	6.5	1	119 850
+93	866	6.5	1	110 756
+94	927	6.5	1	176 751
+95	924	6.5	1	207 717
+96	978	6.5	1	158 820
+97	901	6.5	1	165 736
+98	913	6.5	1	117 796
+99	924	6.5	1	116 808
+100	925	6.5	1	175 750
+101	943	6.5	1	167 776
+102	860	6.5	1	113 747
+103	917	6.5	1	114 803
+104	1009	6.5	1	148 861
+105	954	6.5	1	119 835
+106	928	6.5	1	141 787
+107	931	6.5	1	178 753
+108	904	6.5	1	152 752
+109	882	6.5	1	137 745
+110	892	6.5	1	116 776
+111	926	6.5	1	153 773
+112	969	6.5	1	188 781
+113	951	6.5	1	159 792
+114	909	6.5	1	103 806
+115	927	6.5	1	126 801
+116	968	6.5	1	96 872
+117	984	6.5	1	180 804
+118	1065	6.5	1	186 879
+119	898	6.5	1	136 762
+120	926	6.5	1	93 833
+121	858	6.5	1	99 759
+122	987	6.5	1	178 809
+123	946	6.5	1	177 769
+124	895	6.5	1	121 774
+125	912	6.5	1	132 780
+126	934	6.5	1	139 795
+127	998	6.5	1	144 854
+128	953	6.5	1	138 815
+129	921	6.5	1	113 808
+130	940	6.5	1	115 825
+131	819	6.5	1	79 740
+132	836	6.5	1	59 777
+133	880	6.5	1	85 795
+134	968	6.5	1	150 818
+135	1001	6.5	1	168 833
+136	901	6.5	1	109 792
+137	873	6.5	1	123 750
+138	949	6.5	1	121 828
+139	892	6.5	1	104 788
+140	941	6.5	1	97 844
+141	930	6.5	1	125 805
+142	885	6.5	1	98 787
+143	919	6.5	1	94 825
+144	777	6.5	1	45 732
+145	891	6.5	1	96 795
+146	1045	6.5	1	160 885
+147	1019	6.5	1	150 869
+148	881	6.5	1	139 742
+149	810	6.5	1	99 711
+150	1008	6.5	1	93 915
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076624_2.fastq
+=============================================
+108416583 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files DRR076624_1_trimmed.fq and DRR076624_2_trimmed.fq
+file_1: DRR076624_1_trimmed.fq, file_2: DRR076624_2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: DRR076624_1_trimmed.fq and DRR076624_2_trimmed.fq <<<<<
+Writing validated paired-end Read 1 reads to DRR076624_1_val_1.fq
+Writing validated paired-end Read 2 reads to DRR076624_2_val_2.fq
+
+Total number of sequences analysed: 108416583
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 3351771 (3.09%)
+
+Deleting both intermediate output files DRR076624_1_trimmed.fq and DRR076624_2_trimmed.fq
+
+====================================================================================================
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076625_1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076625_1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076625_1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076625_1.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076625_1.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             108,570,771
+Reads with adapters:                32,538,939 (30.0%)
+Reads written (passing filters):   108,570,771 (100.0%)
+
+Total basepairs processed: 16,285,615,650 bp
+Quality-trimmed:             100,118,130 bp (0.6%)
+Total written (filtered):  16,129,255,767 bp (99.0%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 32538939 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 23.8%
+  C: 25.8%
+  G: 20.3%
+  T: 30.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22597341	27142692.8	0	22597341
+2	7186427	6785673.2	0	7186427
+3	1957474	1696418.3	0	1957474
+4	486697	424104.6	0	486697
+5	107875	106026.1	0	107875
+6	46847	26506.5	0	46847
+7	9308	6626.6	0	9308
+8	5152	1656.7	0	5152
+9	4832	414.2	0	1282 3550
+10	6259	103.5	1	200 6059
+11	2873	25.9	1	89 2784
+12	1068	6.5	1	78 990
+13	940	6.5	1	89 851
+14	902	6.5	1	40 862
+15	974	6.5	1	75 899
+16	916	6.5	1	94 822
+17	992	6.5	1	81 911
+18	967	6.5	1	31 936
+19	987	6.5	1	98 889
+20	990	6.5	1	114 876
+21	944	6.5	1	131 813
+22	922	6.5	1	103 819
+23	877	6.5	1	73 804
+24	980	6.5	1	82 898
+25	1059	6.5	1	107 952
+26	955	6.5	1	87 868
+27	890	6.5	1	81 809
+28	940	6.5	1	97 843
+29	1011	6.5	1	117 894
+30	882	6.5	1	60 822
+31	974	6.5	1	131 843
+32	985	6.5	1	165 820
+33	964	6.5	1	94 870
+34	917	6.5	1	63 854
+35	906	6.5	1	35 871
+36	891	6.5	1	32 859
+37	955	6.5	1	76 879
+38	988	6.5	1	117 871
+39	824	6.5	1	27 797
+40	899	6.5	1	56 843
+41	858	6.5	1	41 817
+42	894	6.5	1	61 833
+43	934	6.5	1	96 838
+44	851	6.5	1	58 793
+45	942	6.5	1	43 899
+46	835	6.5	1	60 775
+47	934	6.5	1	117 817
+48	1011	6.5	1	91 920
+49	869	6.5	1	66 803
+50	842	6.5	1	58 784
+51	903	6.5	1	60 843
+52	802	6.5	1	50 752
+53	835	6.5	1	67 768
+54	916	6.5	1	59 857
+55	861	6.5	1	48 813
+56	939	6.5	1	85 854
+57	877	6.5	1	79 798
+58	950	6.5	1	59 891
+59	846	6.5	1	90 756
+60	910	6.5	1	89 821
+61	878	6.5	1	38 840
+62	814	6.5	1	20 794
+63	809	6.5	1	41 768
+64	894	6.5	1	59 835
+65	844	6.5	1	33 811
+66	859	6.5	1	24 835
+67	851	6.5	1	57 794
+68	835	6.5	1	46 789
+69	931	6.5	1	80 851
+70	898	6.5	1	108 790
+71	781	6.5	1	75 706
+72	950	6.5	1	116 834
+73	925	6.5	1	111 814
+74	892	6.5	1	70 822
+75	849	6.5	1	92 757
+76	955	6.5	1	119 836
+77	913	6.5	1	91 822
+78	957	6.5	1	90 867
+79	767	6.5	1	33 734
+80	765	6.5	1	37 728
+81	833	6.5	1	80 753
+82	864	6.5	1	76 788
+83	940	6.5	1	92 848
+84	833	6.5	1	63 770
+85	879	6.5	1	119 760
+86	911	6.5	1	80 831
+87	998	6.5	1	136 862
+88	880	6.5	1	86 794
+89	822	6.5	1	59 763
+90	899	6.5	1	90 809
+91	942	6.5	1	102 840
+92	843	6.5	1	87 756
+93	903	6.5	1	69 834
+94	969	6.5	1	123 846
+95	988	6.5	1	176 812
+96	923	6.5	1	103 820
+97	933	6.5	1	105 828
+98	931	6.5	1	112 819
+99	883	6.5	1	61 822
+100	918	6.5	1	108 810
+101	1027	6.5	1	138 889
+102	799	6.5	1	62 737
+103	885	6.5	1	63 822
+104	945	6.5	1	95 850
+105	921	6.5	1	105 816
+106	961	6.5	1	101 860
+107	989	6.5	1	126 863
+108	895	6.5	1	119 776
+109	991	6.5	1	128 863
+110	898	6.5	1	68 830
+111	1026	6.5	1	132 894
+112	934	6.5	1	133 801
+113	881	6.5	1	140 741
+114	914	6.5	1	63 851
+115	982	6.5	1	115 867
+116	901	6.5	1	72 829
+117	951	6.5	1	138 813
+118	957	6.5	1	103 854
+119	950	6.5	1	83 867
+120	845	6.5	1	57 788
+121	950	6.5	1	88 862
+122	1026	6.5	1	133 893
+123	997	6.5	1	127 870
+124	959	6.5	1	112 847
+125	1014	6.5	1	93 921
+126	962	6.5	1	118 844
+127	966	6.5	1	81 885
+128	891	6.5	1	89 802
+129	877	6.5	1	81 796
+130	956	6.5	1	102 854
+131	827	6.5	1	58 769
+132	906	6.5	1	52 854
+133	844	6.5	1	47 797
+134	958	6.5	1	105 853
+135	992	6.5	1	124 868
+136	910	6.5	1	100 810
+137	988	6.5	1	87 901
+138	979	6.5	1	91 888
+139	929	6.5	1	78 851
+140	944	6.5	1	74 870
+141	935	6.5	1	74 861
+142	963	6.5	1	61 902
+143	975	6.5	1	47 928
+144	912	6.5	1	26 886
+145	973	6.5	1	86 887
+146	1018	6.5	1	108 910
+147	955	6.5	1	82 873
+148	921	6.5	1	108 813
+149	924	6.5	1	76 848
+150	984	6.5	1	56 928
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076625_1.fastq
+=============================================
+108570771 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076625_2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076625_2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076625_2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076625_2.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076625_2.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             108,570,771
+Reads with adapters:                31,998,689 (29.5%)
+Reads written (passing filters):   108,570,771 (100.0%)
+
+Total basepairs processed: 16,285,615,650 bp
+Quality-trimmed:             877,398,143 bp (5.4%)
+Total written (filtered):  15,353,845,662 bp (94.3%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 31998689 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 23.8%
+  C: 26.3%
+  G: 20.1%
+  T: 29.3%
+  none/other: 0.5%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22697172	27142692.8	0	22697172
+2	6693269	6785673.2	0	6693269
+3	1864964	1696418.3	0	1864964
+4	448271	424104.6	0	448271
+5	102313	106026.1	0	102313
+6	42375	26506.5	0	42375
+7	9099	6626.6	0	9099
+8	4734	1656.7	0	4734
+9	4563	414.2	0	1138 3425
+10	6119	103.5	1	218 5901
+11	2685	25.9	1	106 2579
+12	1111	6.5	1	70 1041
+13	834	6.5	1	85 749
+14	869	6.5	1	50 819
+15	905	6.5	1	103 802
+16	1006	6.5	1	92 914
+17	904	6.5	1	78 826
+18	929	6.5	1	42 887
+19	939	6.5	1	68 871
+20	975	6.5	1	138 837
+21	938	6.5	1	136 802
+22	879	6.5	1	113 766
+23	841	6.5	1	45 796
+24	884	6.5	1	75 809
+25	955	6.5	1	121 834
+26	969	6.5	1	75 894
+27	951	6.5	1	69 882
+28	973	6.5	1	101 872
+29	923	6.5	1	99 824
+30	991	6.5	1	81 910
+31	956	6.5	1	115 841
+32	1044	6.5	1	111 933
+33	928	6.5	1	85 843
+34	922	6.5	1	67 855
+35	813	6.5	1	66 747
+36	858	6.5	1	16 842
+37	905	6.5	1	77 828
+38	902	6.5	1	98 804
+39	880	6.5	1	39 841
+40	927	6.5	1	46 881
+41	794	6.5	1	37 757
+42	816	6.5	1	49 767
+43	936	6.5	1	78 858
+44	971	6.5	1	94 877
+45	899	6.5	1	40 859
+46	867	6.5	1	67 800
+47	935	6.5	1	100 835
+48	914	6.5	1	91 823
+49	876	6.5	1	66 810
+50	861	6.5	1	59 802
+51	869	6.5	1	62 807
+52	836	6.5	1	86 750
+53	827	6.5	1	64 763
+54	851	6.5	1	48 803
+55	862	6.5	1	59 803
+56	774	6.5	1	67 707
+57	807	6.5	1	66 741
+58	834	6.5	1	42 792
+59	835	6.5	1	77 758
+60	810	6.5	1	78 732
+61	838	6.5	1	41 797
+62	778	6.5	1	32 746
+63	815	6.5	1	47 768
+64	880	6.5	1	66 814
+65	835	6.5	1	19 816
+66	816	6.5	1	33 783
+67	937	6.5	1	62 875
+68	840	6.5	1	33 807
+69	874	6.5	1	91 783
+70	885	6.5	1	96 789
+71	892	6.5	1	76 816
+72	919	6.5	1	87 832
+73	860	6.5	1	85 775
+74	798	6.5	1	48 750
+75	914	6.5	1	75 839
+76	928	6.5	1	130 798
+77	875	6.5	1	95 780
+78	960	6.5	1	86 874
+79	849	6.5	1	38 811
+80	894	6.5	1	33 861
+81	897	6.5	1	92 805
+82	891	6.5	1	81 810
+83	861	6.5	1	80 781
+84	858	6.5	1	78 780
+85	986	6.5	1	115 871
+86	912	6.5	1	100 812
+87	916	6.5	1	127 789
+88	891	6.5	1	92 799
+89	782	6.5	1	61 721
+90	926	6.5	1	117 809
+91	911	6.5	1	121 790
+92	982	6.5	1	93 889
+93	797	6.5	1	61 736
+94	909	6.5	1	117 792
+95	923	6.5	1	169 754
+96	903	6.5	1	108 795
+97	894	6.5	1	97 797
+98	959	6.5	1	92 867
+99	831	6.5	1	59 772
+100	896	6.5	1	108 788
+101	844	6.5	1	99 745
+102	824	6.5	1	66 758
+103	941	6.5	1	92 849
+104	863	6.5	1	122 741
+105	845	6.5	1	74 771
+106	851	6.5	1	108 743
+107	894	6.5	1	118 776
+108	845	6.5	1	117 728
+109	812	6.5	1	93 719
+110	870	6.5	1	79 791
+111	854	6.5	1	94 760
+112	877	6.5	1	121 756
+113	888	6.5	1	129 759
+114	860	6.5	1	53 807
+115	963	6.5	1	103 860
+116	823	6.5	1	71 752
+117	985	6.5	1	144 841
+118	938	6.5	1	118 820
+119	785	6.5	1	69 716
+120	814	6.5	1	51 763
+121	888	6.5	1	81 807
+122	884	6.5	1	110 774
+123	910	6.5	1	114 796
+124	864	6.5	1	87 777
+125	825	6.5	1	95 730
+126	983	6.5	1	112 871
+127	918	6.5	1	87 831
+128	890	6.5	1	88 802
+129	930	6.5	1	94 836
+130	880	6.5	1	100 780
+131	819	6.5	1	43 776
+132	779	6.5	1	34 745
+133	786	6.5	1	37 749
+134	918	6.5	1	95 823
+135	901	6.5	1	113 788
+136	870	6.5	1	68 802
+137	943	6.5	1	90 853
+138	930	6.5	1	90 840
+139	963	6.5	1	91 872
+140	936	6.5	1	76 860
+141	861	6.5	1	74 787
+142	838	6.5	1	46 792
+143	863	6.5	1	66 797
+144	839	6.5	1	29 810
+145	820	6.5	1	66 754
+146	919	6.5	1	88 831
+147	989	6.5	1	106 883
+148	757	6.5	1	77 680
+149	797	6.5	1	91 706
+150	852	6.5	1	65 787
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076625_2.fastq
+=============================================
+108570771 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files DRR076625_1_trimmed.fq and DRR076625_2_trimmed.fq
+file_1: DRR076625_1_trimmed.fq, file_2: DRR076625_2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: DRR076625_1_trimmed.fq and DRR076625_2_trimmed.fq <<<<<
+Writing validated paired-end Read 1 reads to DRR076625_1_val_1.fq
+Writing validated paired-end Read 2 reads to DRR076625_2_val_2.fq
+
+Total number of sequences analysed: 108570771
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 3618826 (3.33%)
+
+Deleting both intermediate output files DRR076625_1_trimmed.fq and DRR076625_2_trimmed.fq
+
+====================================================================================================
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076626_1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076626_1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076626_1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076626_1.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076626_1.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             109,186,530
+Reads with adapters:                32,425,808 (29.7%)
+Reads written (passing filters):   109,186,530 (100.0%)
+
+Total basepairs processed: 16,377,979,500 bp
+Quality-trimmed:              72,599,286 bp (0.4%)
+Total written (filtered):  16,249,209,225 bp (99.2%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 32425808 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 23.8%
+  C: 25.5%
+  G: 20.7%
+  T: 30.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22448872	27296632.5	0	22448872
+2	7188296	6824158.1	0	7188296
+3	1988323	1706039.5	0	1988323
+4	492951	426509.9	0	492951
+5	106894	106627.5	0	106894
+6	45264	26656.9	0	45264
+7	9159	6664.2	0	9159
+8	4925	1666.1	0	4925
+9	4885	416.5	0	1187 3698
+10	6169	104.1	1	260 5909
+11	2791	26.0	1	101 2690
+12	1034	6.5	1	82 952
+13	971	6.5	1	117 854
+14	863	6.5	1	49 814
+15	955	6.5	1	79 876
+16	914	6.5	1	103 811
+17	884	6.5	1	78 806
+18	823	6.5	1	41 782
+19	986	6.5	1	105 881
+20	1008	6.5	1	156 852
+21	1009	6.5	1	135 874
+22	978	6.5	1	94 884
+23	937	6.5	1	87 850
+24	977	6.5	1	109 868
+25	976	6.5	1	107 869
+26	974	6.5	1	119 855
+27	885	6.5	1	88 797
+28	954	6.5	1	111 843
+29	983	6.5	1	115 868
+30	907	6.5	1	96 811
+31	965	6.5	1	147 818
+32	953	6.5	1	115 838
+33	921	6.5	1	118 803
+34	950	6.5	1	62 888
+35	835	6.5	1	43 792
+36	854	6.5	1	25 829
+37	1001	6.5	1	93 908
+38	971	6.5	1	128 843
+39	852	6.5	1	26 826
+40	899	6.5	1	55 844
+41	841	6.5	1	45 796
+42	945	6.5	1	63 882
+43	878	6.5	1	79 799
+44	903	6.5	1	112 791
+45	819	6.5	1	36 783
+46	923	6.5	1	79 844
+47	850	6.5	1	90 760
+48	915	6.5	1	93 822
+49	875	6.5	1	96 779
+50	829	6.5	1	68 761
+51	868	6.5	1	78 790
+52	914	6.5	1	76 838
+53	889	6.5	1	71 818
+54	863	6.5	1	59 804
+55	882	6.5	1	67 815
+56	954	6.5	1	80 874
+57	935	6.5	1	81 854
+58	850	6.5	1	64 786
+59	796	6.5	1	72 724
+60	864	6.5	1	67 797
+61	807	6.5	1	64 743
+62	823	6.5	1	24 799
+63	804	6.5	1	50 754
+64	935	6.5	1	85 850
+65	859	6.5	1	26 833
+66	857	6.5	1	39 818
+67	963	6.5	1	84 879
+68	842	6.5	1	41 801
+69	917	6.5	1	75 842
+70	976	6.5	1	130 846
+71	811	6.5	1	96 715
+72	874	6.5	1	73 801
+73	984	6.5	1	133 851
+74	852	6.5	1	55 797
+75	915	6.5	1	84 831
+76	899	6.5	1	103 796
+77	871	6.5	1	106 765
+78	899	6.5	1	116 783
+79	843	6.5	1	33 810
+80	825	6.5	1	36 789
+81	910	6.5	1	111 799
+82	859	6.5	1	94 765
+83	865	6.5	1	100 765
+84	862	6.5	1	55 807
+85	883	6.5	1	118 765
+86	936	6.5	1	141 795
+87	918	6.5	1	104 814
+88	905	6.5	1	79 826
+89	855	6.5	1	61 794
+90	850	6.5	1	119 731
+91	900	6.5	1	123 777
+92	882	6.5	1	92 790
+93	905	6.5	1	66 839
+94	878	6.5	1	106 772
+95	966	6.5	1	172 794
+96	929	6.5	1	117 812
+97	902	6.5	1	100 802
+98	902	6.5	1	106 796
+99	917	6.5	1	65 852
+100	946	6.5	1	114 832
+101	943	6.5	1	134 809
+102	888	6.5	1	83 805
+103	873	6.5	1	87 786
+104	899	6.5	1	105 794
+105	873	6.5	1	116 757
+106	912	6.5	1	105 807
+107	967	6.5	1	144 823
+108	911	6.5	1	118 793
+109	945	6.5	1	119 826
+110	961	6.5	1	87 874
+111	914	6.5	1	115 799
+112	877	6.5	1	126 751
+113	937	6.5	1	122 815
+114	880	6.5	1	50 830
+115	912	6.5	1	103 809
+116	957	6.5	1	99 858
+117	979	6.5	1	127 852
+118	996	6.5	1	119 877
+119	874	6.5	1	85 789
+120	924	6.5	1	87 837
+121	927	6.5	1	111 816
+122	973	6.5	1	133 840
+123	957	6.5	1	159 798
+124	953	6.5	1	123 830
+125	905	6.5	1	95 810
+126	956	6.5	1	120 836
+127	990	6.5	1	110 880
+128	988	6.5	1	105 883
+129	963	6.5	1	104 859
+130	968	6.5	1	121 847
+131	908	6.5	1	75 833
+132	812	6.5	1	38 774
+133	785	6.5	1	58 727
+134	1001	6.5	1	102 899
+135	1047	6.5	1	155 892
+136	922	6.5	1	106 816
+137	990	6.5	1	79 911
+138	929	6.5	1	80 849
+139	979	6.5	1	103 876
+140	900	6.5	1	80 820
+141	982	6.5	1	87 895
+142	996	6.5	1	64 932
+143	911	6.5	1	68 843
+144	897	6.5	1	28 869
+145	984	6.5	1	87 897
+146	982	6.5	1	130 852
+147	996	6.5	1	108 888
+148	946	6.5	1	113 833
+149	934	6.5	1	83 851
+150	1038	6.5	1	80 958
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076626_1.fastq
+=============================================
+109186530 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076626_2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076626_2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076626_2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076626_2.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076626_2.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             109,186,530
+Reads with adapters:                31,666,224 (29.0%)
+Reads written (passing filters):   109,186,530 (100.0%)
+
+Total basepairs processed: 16,377,979,500 bp
+Quality-trimmed:             784,205,284 bp (4.8%)
+Total written (filtered):  15,539,582,629 bp (94.9%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 31666224 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 23.7%
+  C: 25.7%
+  G: 20.9%
+  T: 29.5%
+  none/other: 0.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22349955	27296632.5	0	22349955
+2	6642377	6824158.1	0	6642377
+3	1925317	1706039.5	0	1925317
+4	455114	426509.9	0	455114
+5	101420	106627.5	0	101420
+6	41774	26656.9	0	41774
+7	8895	6664.2	0	8895
+8	4683	1666.1	0	4683
+9	4553	416.5	0	1082 3471
+10	6003	104.1	1	211 5792
+11	2749	26.0	1	93 2656
+12	1045	6.5	1	66 979
+13	886	6.5	1	81 805
+14	868	6.5	1	55 813
+15	942	6.5	1	96 846
+16	928	6.5	1	97 831
+17	876	6.5	1	63 813
+18	833	6.5	1	41 792
+19	941	6.5	1	91 850
+20	951	6.5	1	136 815
+21	948	6.5	1	121 827
+22	973	6.5	1	80 893
+23	895	6.5	1	75 820
+24	926	6.5	1	115 811
+25	943	6.5	1	87 856
+26	893	6.5	1	87 806
+27	946	6.5	1	85 861
+28	955	6.5	1	102 853
+29	919	6.5	1	101 818
+30	928	6.5	1	82 846
+31	956	6.5	1	116 840
+32	977	6.5	1	133 844
+33	906	6.5	1	80 826
+34	881	6.5	1	68 813
+35	853	6.5	1	51 802
+36	848	6.5	1	26 822
+37	930	6.5	1	72 858
+38	943	6.5	1	143 800
+39	841	6.5	1	38 803
+40	891	6.5	1	62 829
+41	825	6.5	1	53 772
+42	895	6.5	1	69 826
+43	895	6.5	1	90 805
+44	889	6.5	1	105 784
+45	857	6.5	1	33 824
+46	840	6.5	1	63 777
+47	951	6.5	1	101 850
+48	870	6.5	1	80 790
+49	854	6.5	1	100 754
+50	856	6.5	1	64 792
+51	849	6.5	1	57 792
+52	812	6.5	1	61 751
+53	877	6.5	1	62 815
+54	882	6.5	1	65 817
+55	883	6.5	1	58 825
+56	855	6.5	1	75 780
+57	842	6.5	1	68 774
+58	905	6.5	1	64 841
+59	840	6.5	1	83 757
+60	851	6.5	1	79 772
+61	841	6.5	1	49 792
+62	812	6.5	1	34 778
+63	871	6.5	1	40 831
+64	922	6.5	1	72 850
+65	815	6.5	1	32 783
+66	799	6.5	1	23 776
+67	885	6.5	1	56 829
+68	811	6.5	1	33 778
+69	863	6.5	1	80 783
+70	882	6.5	1	118 764
+71	836	6.5	1	97 739
+72	838	6.5	1	73 765
+73	882	6.5	1	104 778
+74	806	6.5	1	52 754
+75	894	6.5	1	93 801
+76	929	6.5	1	122 807
+77	877	6.5	1	91 786
+78	857	6.5	1	97 760
+79	818	6.5	1	43 775
+80	785	6.5	1	31 754
+81	894	6.5	1	113 781
+82	872	6.5	1	107 765
+83	854	6.5	1	83 771
+84	895	6.5	1	89 806
+85	902	6.5	1	110 792
+86	853	6.5	1	115 738
+87	935	6.5	1	103 832
+88	822	6.5	1	80 742
+89	904	6.5	1	72 832
+90	917	6.5	1	120 797
+91	878	6.5	1	126 752
+92	951	6.5	1	102 849
+93	825	6.5	1	66 759
+94	983	6.5	1	110 873
+95	944	6.5	1	168 776
+96	846	6.5	1	111 735
+97	898	6.5	1	122 776
+98	934	6.5	1	88 846
+99	840	6.5	1	61 779
+100	845	6.5	1	108 737
+101	837	6.5	1	114 723
+102	885	6.5	1	65 820
+103	850	6.5	1	60 790
+104	890	6.5	1	97 793
+105	850	6.5	1	79 771
+106	873	6.5	1	101 772
+107	906	6.5	1	130 776
+108	921	6.5	1	123 798
+109	875	6.5	1	111 764
+110	866	6.5	1	78 788
+111	879	6.5	1	120 759
+112	869	6.5	1	128 741
+113	999	6.5	1	162 837
+114	857	6.5	1	83 774
+115	912	6.5	1	112 800
+116	933	6.5	1	99 834
+117	985	6.5	1	147 838
+118	919	6.5	1	100 819
+119	867	6.5	1	61 806
+120	893	6.5	1	77 816
+121	883	6.5	1	87 796
+122	965	6.5	1	141 824
+123	947	6.5	1	145 802
+124	900	6.5	1	101 799
+125	839	6.5	1	69 770
+126	953	6.5	1	126 827
+127	884	6.5	1	86 798
+128	908	6.5	1	81 827
+129	969	6.5	1	133 836
+130	897	6.5	1	94 803
+131	805	6.5	1	58 747
+132	849	6.5	1	36 813
+133	864	6.5	1	71 793
+134	936	6.5	1	105 831
+135	1004	6.5	1	131 873
+136	857	6.5	1	84 773
+137	889	6.5	1	107 782
+138	899	6.5	1	79 820
+139	922	6.5	1	84 838
+140	868	6.5	1	93 775
+141	901	6.5	1	89 812
+142	869	6.5	1	52 817
+143	882	6.5	1	71 811
+144	825	6.5	1	30 795
+145	888	6.5	1	79 809
+146	942	6.5	1	124 818
+147	925	6.5	1	100 825
+148	832	6.5	1	113 719
+149	729	6.5	1	76 653
+150	922	6.5	1	70 852
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076626_2.fastq
+=============================================
+109186530 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files DRR076626_1_trimmed.fq and DRR076626_2_trimmed.fq
+file_1: DRR076626_1_trimmed.fq, file_2: DRR076626_2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: DRR076626_1_trimmed.fq and DRR076626_2_trimmed.fq <<<<<
+Writing validated paired-end Read 1 reads to DRR076626_1_val_1.fq
+Writing validated paired-end Read 2 reads to DRR076626_2_val_2.fq
+
+Total number of sequences analysed: 109186530
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 3157241 (2.89%)
+
+Deleting both intermediate output files DRR076626_1_trimmed.fq and DRR076626_2_trimmed.fq
+
+====================================================================================================
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076627_1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076627_1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076627_1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076627_1.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076627_1.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             109,331,920
+Reads with adapters:                31,770,736 (29.1%)
+Reads written (passing filters):   109,331,920 (100.0%)
+
+Total basepairs processed: 16,399,788,000 bp
+Quality-trimmed:              66,218,401 bp (0.4%)
+Total written (filtered):  16,277,481,387 bp (99.3%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 31770736 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 24.6%
+  C: 25.2%
+  G: 20.7%
+  T: 29.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22001452	27332980.0	0	22001452
+2	7021933	6833245.0	0	7021933
+3	1954195	1708311.2	0	1954195
+4	486890	427077.8	0	486890
+5	101902	106769.5	0	101902
+6	39845	26692.4	0	39845
+7	8771	6673.1	0	8771
+8	4370	1668.3	0	4370
+9	4710	417.1	0	1209 3501
+10	6246	104.3	1	328 5918
+11	2797	26.1	1	168 2629
+12	1129	6.5	1	164 965
+13	1049	6.5	1	209 840
+14	847	6.5	1	89 758
+15	969	6.5	1	162 807
+16	1119	6.5	1	261 858
+17	974	6.5	1	198 776
+18	850	6.5	1	59 791
+19	996	6.5	1	174 822
+20	1127	6.5	1	303 824
+21	1178	6.5	1	320 858
+22	1028	6.5	1	216 812
+23	935	6.5	1	135 800
+24	1014	6.5	1	209 805
+25	987	6.5	1	200 787
+26	1095	6.5	1	265 830
+27	993	6.5	1	186 807
+28	1116	6.5	1	228 888
+29	1092	6.5	1	281 811
+30	953	6.5	1	183 770
+31	1089	6.5	1	287 802
+32	1171	6.5	1	276 895
+33	1052	6.5	1	237 815
+34	965	6.5	1	137 828
+35	849	6.5	1	77 772
+36	828	6.5	1	40 788
+37	1002	6.5	1	175 827
+38	1063	6.5	1	222 841
+39	814	6.5	1	51 763
+40	930	6.5	1	96 834
+41	906	6.5	1	77 829
+42	881	6.5	1	92 789
+43	981	6.5	1	160 821
+44	1031	6.5	1	201 830
+45	900	6.5	1	68 832
+46	964	6.5	1	131 833
+47	980	6.5	1	184 796
+48	889	6.5	1	167 722
+49	931	6.5	1	187 744
+50	842	6.5	1	119 723
+51	914	6.5	1	129 785
+52	914	6.5	1	142 772
+53	903	6.5	1	100 803
+54	890	6.5	1	97 793
+55	900	6.5	1	139 761
+56	942	6.5	1	134 808
+57	934	6.5	1	183 751
+58	941	6.5	1	123 818
+59	918	6.5	1	178 740
+60	869	6.5	1	139 730
+61	872	6.5	1	112 760
+62	848	6.5	1	51 797
+63	829	6.5	1	65 764
+64	918	6.5	1	120 798
+65	758	6.5	1	29 729
+66	856	6.5	1	39 817
+67	906	6.5	1	109 797
+68	902	6.5	1	42 860
+69	919	6.5	1	119 800
+70	1034	6.5	1	268 766
+71	919	6.5	1	150 769
+72	969	6.5	1	145 824
+73	1127	6.5	1	290 837
+74	919	6.5	1	128 791
+75	949	6.5	1	167 782
+76	1008	6.5	1	229 779
+77	1049	6.5	1	276 773
+78	1022	6.5	1	231 791
+79	856	6.5	1	69 787
+80	864	6.5	1	49 815
+81	992	6.5	1	167 825
+82	971	6.5	1	157 814
+83	989	6.5	1	179 810
+84	894	6.5	1	101 793
+85	1052	6.5	1	215 837
+86	1089	6.5	1	274 815
+87	1090	6.5	1	259 831
+88	943	6.5	1	146 797
+89	1002	6.5	1	163 839
+90	954	6.5	1	139 815
+91	1064	6.5	1	271 793
+92	1051	6.5	1	249 802
+93	907	6.5	1	95 812
+94	1049	6.5	1	251 798
+95	1124	6.5	1	366 758
+96	1095	6.5	1	259 836
+97	1067	6.5	1	280 787
+98	1083	6.5	1	214 869
+99	946	6.5	1	118 828
+100	1076	6.5	1	268 808
+101	1063	6.5	1	296 767
+102	943	6.5	1	138 805
+103	931	6.5	1	165 766
+104	1005	6.5	1	205 800
+105	1084	6.5	1	243 841
+106	928	6.5	1	186 742
+107	1094	6.5	1	309 785
+108	1029	6.5	1	259 770
+109	1226	6.5	1	371 855
+110	989	6.5	1	132 857
+111	1027	6.5	1	249 778
+112	1046	6.5	1	268 778
+113	1011	6.5	1	281 730
+114	833	6.5	1	100 733
+115	1083	6.5	1	276 807
+116	977	6.5	1	180 797
+117	1102	6.5	1	311 791
+118	1105	6.5	1	257 848
+119	967	6.5	1	124 843
+120	935	6.5	1	125 810
+121	946	6.5	1	163 783
+122	1056	6.5	1	279 777
+123	1087	6.5	1	280 807
+124	1044	6.5	1	289 755
+125	1044	6.5	1	211 833
+126	1090	6.5	1	266 824
+127	1056	6.5	1	237 819
+128	989	6.5	1	187 802
+129	1002	6.5	1	240 762
+130	985	6.5	1	204 781
+131	966	6.5	1	158 808
+132	928	6.5	1	110 818
+133	867	6.5	1	82 785
+134	1059	6.5	1	251 808
+135	1138	6.5	1	301 837
+136	1005	6.5	1	220 785
+137	1019	6.5	1	213 806
+138	1013	6.5	1	193 820
+139	1047	6.5	1	244 803
+140	1029	6.5	1	207 822
+141	1003	6.5	1	179 824
+142	964	6.5	1	134 830
+143	951	6.5	1	147 804
+144	905	6.5	1	31 874
+145	1038	6.5	1	165 873
+146	1092	6.5	1	219 873
+147	1077	6.5	1	193 884
+148	973	6.5	1	198 775
+149	923	6.5	1	164 759
+150	1345	6.5	1	159 1186
+
+RUN STATISTICS FOR INPUT FILE: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076627_1.fastq
+=============================================
+109331920 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/02_TrimGalore_Sequences/00_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076627_2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076627_2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 5.0
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Cutadapt seems to be fairly up-to-date (version 5.0). Setting -j -j 1
+Writing final adapter and quality trimmed output to DRR076627_2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076627_2.fastq <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+100000000 sequences processed
+This is cutadapt 5.0 with Python 3.12.1
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /work/FAC/FBM/DEE/mrobinso/default/pminguet/Projects/2025_TestingPipelines/00_FastQ_Files/00_Protobothrops-mucrosquamatus_PRJDB4386_FastQ_Files/Paired/DRR076627_2.fastq
+Processing single-end reads on 1 core ...
+
+=== Summary ===
+
+Total reads processed:             109,331,920
+Reads with adapters:                31,598,951 (28.9%)
+Reads written (passing filters):   109,331,920 (100.0%)
+
+Total basepairs processed: 16,399,788,000 bp
+Quality-trimmed:             751,014,581 bp (4.6%)
+Total written (filtered):  15,593,715,789 bp (95.1%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 31598951 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 24.1%
+  C: 25.7%
+  G: 20.5%
+  T: 29.5%
+  none/other: 0.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22222517	27332980.0	0	22222517
+2	6697662	6833245.0	0	6697662
+3	1918513	1708311.2	0	1918513
+4	459852	427077.8	0	459852
+5	100254	106769.5	0	100254
+6	38844	26692.4	0	38844
+7	8929	6673.1	0	8929
+8	4677	1668.3	0	4677
+9	4683	417.1	0	1187 3496
+10	6057	104.3	1	313 5744
+11	2790	26.1	1	178 2612
+12	1092	6.5	1	150 942
+13	997	6.5	1	182 815
+14	838	6.5	1	84 754
+15	968	6.5	1	154 814
+16	1029	6.5	1	206 823
+17	1009	6.5	1	144 865
+18	886	6.5	1	68 818
+19	988	6.5	1	145 843
+20	1055	6.5	1	271 784
+21	1128	6.5	1	272 856
+22	973	6.5	1	171 802
+23	947	6.5	1	120 827
+24	999	6.5	1	159 840
+25	986	6.5	1	175 811
+26	1055	6.5	1	209 846
+27	967	6.5	1	174 793
+28	1065	6.5	1	219 846
+29	1007	6.5	1	216 791
+30	974	6.5	1	191 783
+31	1028	6.5	1	247 781
+32	1140	6.5	1	329 811
+33	1041	6.5	1	229 812
+34	938	6.5	1	133 805
+35	897	6.5	1	70 827
+36	843	6.5	1	34 809
+37	995	6.5	1	144 851
+38	993	6.5	1	225 768
+39	871	6.5	1	49 822
+40	926	6.5	1	79 847
+41	795	6.5	1	76 719
+42	933	6.5	1	110 823
+43	982	6.5	1	174 808
+44	981	6.5	1	162 819
+45	904	6.5	1	61 843
+46	909	6.5	1	122 787
+47	952	6.5	1	162 790
+48	919	6.5	1	121 798
+49	968	6.5	1	153 815
+50	907	6.5	1	97 810
+51	955	6.5	1	124 831
+52	936	6.5	1	134 802
+53	908	6.5	1	102 806
+54	921	6.5	1	116 805
+55	921	6.5	1	121 800
+56	946	6.5	1	134 812
+57	964	6.5	1	156 808
+58	926	6.5	1	105 821
+59	973	6.5	1	175 798
+60	994	6.5	1	163 831
+61	910	6.5	1	106 804
+62	899	6.5	1	58 841
+63	825	6.5	1	73 752
+64	899	6.5	1	97 802
+65	880	6.5	1	42 838
+66	811	6.5	1	55 756
+67	938	6.5	1	95 843
+68	828	6.5	1	49 779
+69	880	6.5	1	112 768
+70	990	6.5	1	245 745
+71	993	6.5	1	164 829
+72	946	6.5	1	211 735
+73	1049	6.5	1	237 812
+74	924	6.5	1	105 819
+75	983	6.5	1	178 805
+76	997	6.5	1	219 778
+77	1012	6.5	1	200 812
+78	978	6.5	1	159 819
+79	867	6.5	1	47 820
+80	861	6.5	1	46 815
+81	872	6.5	1	135 737
+82	893	6.5	1	147 746
+83	941	6.5	1	176 765
+84	969	6.5	1	160 809
+85	1043	6.5	1	190 853
+86	1075	6.5	1	251 824
+87	1016	6.5	1	235 781
+88	972	6.5	1	149 823
+89	1026	6.5	1	154 872
+90	919	6.5	1	157 762
+91	1036	6.5	1	315 721
+92	1000	6.5	1	195 805
+93	942	6.5	1	121 821
+94	1040	6.5	1	258 782
+95	1119	6.5	1	361 758
+96	1049	6.5	1	236 813
+97	974	6.5	1	216 758
+98	1008	6.5	1	190 818
+99	969	6.5	1	118 851
+100	974	6.5	1	221 753
+101	993	6.5	1	254 739
+102	947	6.5	1	156 791
+103	917	6.5	1	150 767
+104	984	6.5	1	197 787
+105	910	6.5	1	174 736
+106	900	6.5	1	175 725
+107	1060	6.5	1	280 780
+108	995	6.5	1	245 750
+109	1033	6.5	1	227 806
+110	908	6.5	1	133 775
+111	986	6.5	1	220 766
+112	973	6.5	1	234 739
+113	1047	6.5	1	299 748
+114	913	6.5	1	129 784
+115	1045	6.5	1	185 860
+116	904	6.5	1	146 758
+117	1128	6.5	1	346 782
+118	1043	6.5	1	225 818
+119	926	6.5	1	111 815
+120	856	6.5	1	84 772
+121	930	6.5	1	172 758
+122	1012	6.5	1	223 789
+123	1034	6.5	1	242 792
+124	988	6.5	1	187 801
+125	927	6.5	1	168 759
+126	979	6.5	1	227 752
+127	1048	6.5	1	226 822
+128	1026	6.5	1	192 834
+129	1038	6.5	1	235 803
+130	931	6.5	1	192 739
+131	960	6.5	1	161 799
+132	887	6.5	1	114 773
+133	886	6.5	1	92 794
+134	981	6.5	1	222 759
+135	1073	6.5	1	263 810
+136	922	6.5	1	153 769
+137	954	6.5	1	188 766
+138	1068	6.5	1	176 892
+139	963	6.5	1	187 776
+140	1016	6.5	1	193 823
+141	960	6.5	1	190 770
+142	912	6.5	1	122 790
+143	933	6.5	1	135 798
+144	907	6.5	1	40 867
+145	932	6.5	1	152 780
+146	994	6.5	1	190 804
+147	1025	6.5	1	198 827
+148	858	6.5	1	187 671
+149	778	6.5	1	135 643
+150	1147	6.5	1	153 994
+Unable to close OUT filehandle: Disk quota exceeded
+Warning: unable to close filehandle properly: Disk quota exceeded during global destruction.
