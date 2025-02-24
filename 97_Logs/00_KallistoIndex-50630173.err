@@ -1,0 +1,10 @@
+
+[build] loading fasta file 93_CodingSqs/Homo-sapiens/ncbi_dataset/data/GCF_000001405.40/cds_from_genomic.fna
+[build] k-mer length: 31
+[build] warning: replaced 4 non-ACGUT characters in the input sequence
+        with pseudorandom nucleotides
+[build] counting k-mers ... done.
+[build] building target de Bruijn graph ...  done 
+[build] creating equivalence classes ...  done
+[build] target de Bruijn graph has 201101 contigs and contains 35222321 k-mers 
+
