@@ -1,36 +1,45 @@
 ###  How to use the following scripts:
-* 00_Prefetch_SRA_Files.slurm  
-* 01_FasterQ-Dump_SRA_Files.slurm  
-* 02_FastQC_Analysis.slurm  
-* 03_MultiQC_Analysis.slurm  
-* 04.1_TrimGalore.slurm  
-* 04.2_ReadLengthSD.slurm  
-* 05.1_Kallisto_Index.slurm  
-* 05.2_Kallisto_Abundance.slurm  
+* 00_P_Prefetch_SRA_Files.slurm  
+* 00_S_Prefetch_SRA_Files.slurm  
+* 01_P_FasterQ-Dump_SRA_Files.slurm  
+* 01_S_FasterQ-Dump_SRA_Files.slurm  
+* 02_P_FastQC_Analysis.slurm  
+* 02_S_FastQC_Analysis.slurm  
+* 03_P_MultiQC_Analysis.slurm  
+* 03_S_MultiQC_Analysis.slurm  
+* 04_P_TrimGalore.slurm  
+* 04_S_TrimGalore.slurm  
+* 05_P_ReadsLength.slurm  
+* 05_S_ReadsLength.slurm  
+* 06_Getting_CDS.slurm  
+* 07_Kallisto_Index.slurm  
+* 08_Kallisto_Abundance.slurm  
+* 08_P_Kallisto_Abundance.slurm  
+* 08_S_Kallisto_Abundance.slurm  
   
-When requesting a SLURM job, replace `<Project_ID>`, `<OrganismLatin>` and `<ScriptName>` in the following code:  
+Some are meant for `single-end` `*_S_*` reads, while others are meant for `paired-end` `*_P_*` reads.  
+When requesting a SLURM job, replace `<Project>`, `<OrganismLatin>`, `<ReferenceSequenceAssembly>` (solely used for  
+`06_Getting_CDS.slurm` and `07_Kallisto_Index.slurm`) and `<ScriptName>` in the following code:  
 
 ```bash  
-sbatch --export=PROJECT_ID=<Project_ID>,ORG=<OrganismLatin> <ScriptName>  
+sbatch --export=PROJECT=<Project>,ORG=<OrganismLatin>,REFSEQA=<ReferenceSequenceAssembly> <ScriptName>  
 ```  
 
-By doing so, you are setting `PROJECT_ID` and `ORG` variables before the job gets submitted, allowing you to change these \
+By doing so, you are setting `PROJECT` and `ORG` variables before the job gets submitted, allowing you to change these \
 variable within the script without having to edit the script everytime you wish to work on a new organism, or different project.  
-By `PROJECT_ID`, it should be understood that it relates to an SRA Project Accession ID!  
+By `PROJECT`, it should be understood that it relates to an SRA Project Accession ID!  
   
 ###### Information about the Trim Galore step    
-The `04.1_TrimGalore.slurm` script needs to be edited if your reads are single-end. To do so, simply remove `#` \
-located after `#  For single-end reads` in order to activate the line, and add a `#` for the coding line following \
-`#  For paired-end reads`.  
-This script job can be used on multiple cores (if I understood correctly). Using only 1 CPU used 98.42% of it, \
-and took 3 minutes for 3 small FastQ files. If you have multiple large files, you might want to use more cores!  
+The `04_?_TrimGalore.slurm` script needs to be edited if your reads are single-end. To do so, simply use  
+`05_S_ReadsLength.slurm` in order to know the average read length and the standard deviation \
+This script job can be used on multiple cores (if I understood correctly).
 ###### Information about the Kallista step  
-In order to use `05_Kallisto_Abundance.slurm`, you first have to know the average read length and standard deviation \
-(for single-end reads) of newly generated `.fq` files from `04.1_TrimGalore.slurm`. To do so, use the script \
-`04.2_ReadLengthSD.slurm` which will give you just that. Then you'll have to edit `05_Kallisto_Abundance.slurm`. \
-Keep in mind that depending on your files being single-end or paired-end reads, you will have to activate and \
-deactivate coding lines based on the written instructions within the script. For single-end reads, modify the \
-values associated to the `-l <MeanReadLength>` and `-s <StandardDeviationReadLength>` parameters.  
-For RefSeq Assembly, same principle as the `PROJECT_ID` variable, for the `REFSEQA` variable.
- 
-
+In order to use `08_S_Kallisto_Abundance.slurm` script, simply use `05_S_ReadsLength.slurm` in order to know  
+the average read length and the standard deviation (for single-end reads) of newly generated `.fq` files  
+from `04_TrimGalore.slurm`. To do so, use the script `05_ReadsLength.slurm` which will give you just that.  
+Then you'll have to edit `08_S_Kallisto_Abundance.slurm`. \
+For single-end reads, modify the values associated to the `-l <MeanReadLength>` and `-s <StandardDeviationReadLength>` parameters.  
+For RefSeq Assembly, same principle as the `PROJECT` variable, for the `REFSEQA` variable. \
+In order to use the Array option of `08_?_Kallisto_Abundance.slurm`, you need to add the parameter `--array=0-<N-1>`,  
+`N-1` referring to the number of files-minus-one to quantify! A useful command to count the number of files within  
+a directory is `ls -1 | wc -l`. Then divide the result by 2, and take one away.  
