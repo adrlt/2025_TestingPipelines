@@ -36,6 +36,6 @@ mkdir -p 03_Kallisto_Abundance/${ORG}_${PROJECT}_KAS
 #  Quantification of FastQ files for paired-end reads!
 kallisto quant --bias -i 93_CodingSqs/${ORG}/${ORG}_Index \
  -o 03_Kallisto_Abundance/${ORG}_${PROJECT}_KAS/${NAMES[${SLURM_ARRAY_TASK_ID}]} \
- --single -l -s 02_TrimGalore_Sequences/S_${ORG}_${PROJECT}_TrimG/${NAMES[${SLURM_ARRAY_TASK_ID}]}_trimmed.fq
+ --single -l 39 -s 13 02_TrimGalore_Sequences/S_${ORG}_${PROJECT}_TrimG/${NAMES[${SLURM_ARRAY_TASK_ID}]}_trimmed.fq
 
 echo "Kallisto Job Array Script (single-end) for ${PROJECT} Associated to ${ORG} Completed"
