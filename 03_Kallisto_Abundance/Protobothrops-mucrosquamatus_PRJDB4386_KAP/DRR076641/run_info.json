@@ -1,0 +1,13 @@
+{
+	"n_targets": 23450,
+	"n_bootstraps": 0,
+	"n_processed": 106763224,
+	"n_pseudoaligned": 9249441,
+	"n_unique": 8481698,
+	"p_pseudoaligned": 8.7,
+	"p_unique": 7.9,
+	"kallisto_version": "0.48.0",
+	"index_version": 10,
+	"start_time": "Tue Feb 25 09:24:34 2025",
+	"call": "kallisto quant --bias -i 93_CodingSqs/Protobothrops-mucrosquamatus/Protobothrops-mucrosquamatus_Index -o /scratch/pminguet/03_Kallisto_Abundance/Protobothrops-mucrosquamatus_PRJDB4386_KAP/DRR076641 /scratch/pminguet/tempTG/P_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076641_1_val_1.fq /scratch/pminguet/tempTG/P_Protobothrops-mucrosquamatus_PRJDB4386_TrimG/DRR076641_2_val_2.fq"
+}

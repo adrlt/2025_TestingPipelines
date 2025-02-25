@@ -1,0 +1,13 @@
+{
+	"n_targets": 145439,
+	"n_bootstraps": 0,
+	"n_processed": 18307150,
+	"n_pseudoaligned": 13243727,
+	"n_unique": 6129006,
+	"p_pseudoaligned": 72.3,
+	"p_unique": 33.5,
+	"kallisto_version": "0.48.0",
+	"index_version": 10,
+	"start_time": "Mon Feb 24 12:43:31 2025",
+	"call": "kallisto quant --bias -i 93_CodingSqs/Homo-sapiens/Homo-sapiens_Index -o 03_Kallisto_Abundance/Homo-sapiens_PRJEB6971_KA/ERR579149 02_TrimGalore_Sequences/00_Homo-sapiens_PRJEB6971_TrimG/ERR579149_1_val_1.fq 02_TrimGalore_Sequences/00_Homo-sapiens_PRJEB6971_TrimG/ERR579149_2_val_2.fq"
+}
