@@ -1,0 +1,16 @@
+
+[quant] fragment length distribution will be estimated from the data
+[index] k-mer length: 31
+[index] number of targets: 145,439
+[index] number of k-mers: 35,222,321
+[index] number of equivalence classes: 250,308
+[quant] running in paired-end mode
+[quant] will process pair 1: 02_TrimGalore_Sequences/P_Homo-sapiens_PRJNA601418_TrimG/SRR10898055_1_val_1.fq
+                             02_TrimGalore_Sequences/P_Homo-sapiens_PRJNA601418_TrimG/SRR10898055_2_val_2.fq
+[quant] finding pseudoalignments for the reads ... done
+[quant] learning parameters for sequence specific bias
+[quant] processed 27,462,317 reads, 6,096,565 reads pseudoaligned
+[quant] estimated average fragment length: 166.69
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 1,186 rounds
+
